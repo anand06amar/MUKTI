@@ -8,15 +8,18 @@ import  {NavbarFloat}  from "@/components/navbar/Navbar";
 import Sponsors from "@/components/footer/Sponsors";
 import { ThreeDCardDemo } from "@/components/speakers/3Dcard";
 import Counter from "@/components/countdown/counter";
+import TimeLine from "@/components/timeline/TimeLine";
 
 export default function Home() {
   return (
     <>
+    {/* <TracingBeam className=""> */}
     <NavbarFloat/>
     <Hero />
     <Counter /> 
     <ThreeDCardDemo />
     <Sponsors />
+    <TimeLine/>
     <AboutUs />
     </>
   );

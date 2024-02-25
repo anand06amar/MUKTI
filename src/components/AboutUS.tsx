@@ -8,7 +8,7 @@ export default function AboutUs(){
 
             <div className=' pr-[18%] pt-[4rem]'>
                 <h1 className="text-5xl font-bold">About Us</h1>
-                <h2 className='text-xl font-bold pt-12'>GNU/Linux User's Group</h2>
+                <h2 className='text-xl font-bold pt-12'>GNU/Linux User&apos;s Group</h2>
                 
                 </div>
 
@@ -46,7 +46,7 @@ export default function AboutUs(){
 
         
         </div>
-        <h4 className='text-center pt-5 text-xl font-bold'>GNU/Linux User's Group</h4>
+        <h4 className='text-center pt-5 text-xl font-bold'>GNU/Linux User&apos;s Group</h4>
     </div>
 
         

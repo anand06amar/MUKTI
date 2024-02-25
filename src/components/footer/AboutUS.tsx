@@ -18,7 +18,7 @@ export default function AboutUs(){
             Laudantium, eaque. Expedita, voluptatum voluptates? Laudantium ut accusamus dignissimos laboriosam possimus, ex magnam qui expedita pariatur tempora repellendus inventore deserunt minus! Suscipit corporis nihil adipisci non magnam libero, vero dolorum!</div>
 </div>    
 
-    <div className='absolute bottom-20 lg:bottom-0 w-full'>
+    <div className='absolute bottom-0 w-full'>
         <h1 className='text-center font-bold text-4xl'>Contact Us</h1>
         <div className='w-full flex justify-center gap-[4%] pt-6'>
             <Link href=''>

@@ -10,9 +10,11 @@ function Hero() {
         gradientBackgroundStart="#000000"
         gradientBackgroundEnd="#000000"
         pointerColor="white"
-        firstColor="243, 159, 90"
-        secondColor="243, 159, 90"
-        thirdColor="243, 159, 90"
+        firstColor="174, 68, 90"
+        secondColor="69, 25, 82"
+        thirdColor="69, 25, 82"
+        fourthColor="174, 68, 90"
+        fifthColor="174, 68, 90"
       >
         <div className="absolute top-0 left-0 w-full h-full">
           <Image

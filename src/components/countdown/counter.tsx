@@ -18,7 +18,7 @@ export default function Counter() {
     return (
       <section className="coming-soon-section">
         <div className="auto-container relative -top-20">
-            <div className="sm:w-[90vw] w-[400px] max-w-[900px] mx-auto lg:mx-0 bg-[#F39F5A] text-black font-bold rounded-xl ps-10 pe-10 lg:flex">
+            <div className="sm:w-[90vw] w-[350px] max-w-[900px] mx-auto lg:mx-0 bg-[#F39F5A] text-black font-bold rounded-xl ps-10 pe-10 lg:flex">
                 <div className="title-column items-center flex justify-center">
                     <div className="inner-column hidden lg:block none">
                         <div className="text-2xl text-center font-bold text-slate-800 lg:text-start ">Count Every<br></br>Second Until<br></br>the Event</div>

@@ -15,7 +15,7 @@ export default function Home() {
     <>
     <NavbarFloat/>
     <Hero />
-    <Counter /> 
+    <Counter/>
     <ThreeDCardDemo />
     <TimeLine/>
     <Sponsors />

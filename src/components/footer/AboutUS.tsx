@@ -39,7 +39,7 @@ export default function AboutUs(){
 
         
         </div>
-        <h4 className='text-center pt-5 text-xl font-bold'>GNU/Linux User&apos;s Group</h4>
+        <h4 className='text-center pt-5 pb-5 text-xl font-bold'>GNU/Linux User&apos;s Group</h4>
     </div>
 
         

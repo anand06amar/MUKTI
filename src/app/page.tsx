@@ -18,8 +18,8 @@ export default function Home() {
     <Hero />
     <Counter /> 
     <ThreeDCardDemo />
-    <Sponsors />
     <TimeLine/>
+    <Sponsors />
     <AboutUs />
     </>
   );

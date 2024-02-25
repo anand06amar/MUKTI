@@ -9,6 +9,7 @@ import Sponsors from "@/components/footer/Sponsors";
 import { ThreeDCardDemo } from "@/components/speakers/3Dcard";
 import Counter from "@/components/countdown/counter";
 import TimeLine from "@/components/timeline/TimeLine";
+import { AnimatedPinDemo } from "@/components/ui/speakerCard";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
     <Hero />
     <Counter /> 
     <ThreeDCardDemo />
+    <AnimatedPinDemo />
     <TimeLine/>
     <Sponsors />
     <AboutUs />

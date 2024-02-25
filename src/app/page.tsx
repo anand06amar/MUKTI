@@ -6,40 +6,16 @@ import { TracingBeam } from "@/components/ui/tracing-beam";
 import {ThreeDCardDemo} from "@/components/speakers/3Dcard";
 import Image from "next/image";
 import { NavbarFloat } from "@/components/navbar/Navbar";
+import TimeLine from "@/components/timeline/TimeLine";
 
 export default function Home() {
   return (
     <>
+    {/* <TracingBeam className=""> */}
     <NavbarFloat/>
     <Hero />
+    <TimeLine/>
     <AboutUs />
-      <ThreeDCardDemo>
-        <Image
-          src="/images/speaker_3.png"
-          // height="1000"
-          // width="1000"
-          className=" object-cover rounded-xl group-hover/card:shadow-xl"
-          alt="thumbnail"
-        />
-      </ThreeDCardDemo>
-      <ThreeDCardDemo>
-        <Image
-          src="/images/speaker_3.png"
-          // height="1000"
-          // width="1000"
-          className=" object-cover rounded-xl group-hover/card:shadow-xl"
-          alt="thumbnail"
-        />
-      </ThreeDCardDemo>
-      <ThreeDCardDemo>
-        <Image
-          src="/images/speaker_3.png"
-          // height="1000"
-          // width="1000"
-          className=" object-cover rounded-xl group-hover/card:shadow-xl"
-          alt="thumbnail"
-        />
-      </ThreeDCardDemo>
     </>
   );
 }

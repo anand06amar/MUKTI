@@ -81,4 +81,14 @@ function addVariablesForColors({ addBase, theme }: any) {
   });
 }
 
+// module.exports = {
+//   theme: {
+//     extend: {
+//       fontFamily: {
+//         'lalezar': ['Lalezar', 'cursive']
+//       }
+//     }
+//   }
+// }
+
 export default config;

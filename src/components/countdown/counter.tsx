@@ -16,41 +16,41 @@ export default function Counter() {
   }, [isRunning]);
 
     return (
-      <section className="coming-soon-section">
-        <div className="auto-container relative -top-20">
-            <div className="sm:w-[90vw] w-[400px] max-w-[900px] bg-[#F39F5A] text-black font-bold rounded-xl ps-10 pe-10 lg:flex">
-                <div className="title-column items-center flex justify-center">
+      <section className="coming-soon-section w-[100%]">
+        <div className="flex flex-row auto-container justify-end relative -top-20">
+            <div className="w-[80%] bg-[#F39F5A] text-black font-bold rounded-l-xl ps-10 pe-10 lg:flex">
+                <div className="title-column  items-center flex justify-center">
                     <div className="inner-column hidden lg:block none">
-                        <div className="text-2xl text-center font-bold text-slate-800 lg:text-start ">Count Every<br></br>Second Until<br></br>the Event</div>
+                        <div className="text-5xl  text-center font-bold text-slate-800 lg:text-start ">Count Every<br></br>Second Until<br></br>the Event</div>
               </div>
-              <div className="inner-column pt-10 lg:hidden">
+              <div className="inner-column pt-10  lg:hidden">
                 <div className="text-2xl text-center font-bold text-slate-800 lg:text-start ">Count Every Second Until the Event</div>
               </div>
                 </div>
-                <div className="divider lg:block lg:flex-col hidden ps-8 pe-8 justify-center">
+                <div className="divider lg:flex lg:flex-col hidden ps-16 ">
                     <div className="inner-column">
-                        <div className="text-center text-xl font-bold pt-2 text-slate-800 mt-8">|</div>
+                        <div className="text-center text-xl lg:text-2xl font-bold pt-2 text-slate-800 mt-8">|</div>
                         </div>
                         <div className="inner-column">
-                        <div className="text-center text-xl font-bold pt-2 text-slate-800 mt-2">|</div>
+                        <div className="text-center text-xl lg:text-2xl font-bold pt-2 text-slate-800 mt-2">|</div>
                         </div>
                         <div className="inner-column">
-                        <div className="text-center text-xl font-bold pt-2 text-slate-800 mt-2">|</div>
+                        <div className="text-center text-xl l lg:text-2xl font-bold pt-2 text-slate-800 mt-2">|</div>
                     </div>
                 </div>
                 <div className="timer-column">
                     <div className="inner-column">
                             <div className="time-counter">
-                                <div className="time-countdown clearfix flex flex-wrap gap-10 m-4 pb-10 pt-10 justify-center ">
-                                    <div className="counter-column flex flex-col gap-4 font-semibold justify-center items-center text-[#212639] text-lg"><span className="count font-bold text-black text-5xl ">00 </span>Days</div>
+                                <div className="time-countdown clearfix flex flex-wrap ml-20 gap-20 m-2 pb-10 pt-10  justify-center lg:justify-end ">
+                                    <div className="counter-column flex flex-col gap-4 font-semibold justify-center items-center text-[#212639] text-lg"><span className="count font-bold text-slate-800 text-5xl  lg:text-7xl ">00 </span>Days</div>
                                     <div className="text-[#212639] text-4xl mt-1">:</div>
-                                    <div className="counter-column flex flex-col gap-4 font-semibold justify-center items-center text-[#212639] text-lg"><span className="count font-bold text-black text-5xl ">00 </span>Hours</div>
+                                    <div className="counter-column flex flex-col gap-4 font-semibold justify-center items-center text-[#212639] text-lg"><span className="count font-bold text-slate-800 text-5xl lg:text-7xl ">00 </span>Hours</div>
                     <div className="text-[#212639] text-4xl mt-1 hidden sm:block">:</div>
                     
                     
-                                    <div className="counter-column flex flex-col gap-4 font-semibold justify-center items-center text-[#212639] text-lg"><span className="count font-bold text-black text-5xl ">00 </span>Minutes</div>
+                                    <div className="counter-column flex flex-col gap-4 font-semibold justify-center items-center text-[#212639] text-lg"><span className="count font-bold text-slate-800 text-5xl lg:text-7xl ">00 </span>Minutes</div>
                                     <div className="text-[#212639] text-4xl mt-1">:</div>
-                                    <div className="counter-column flex flex-col gap-4 font-semibold justify-center items-center text-[#212639] text-lg"><span className="count font-bold text-black text-5xl ">00 </span>Seconds</div>                                    
+                                    <div className="counter-column flex flex-col gap-4 font-semibold justify-center items-center text-[#212639] text-lg"><span className="count font-bold text-slate-800 text-5xl lg:text-7xl ">00 </span>Seconds</div>                                    
                                 </div>
                             </div>
                     </div>

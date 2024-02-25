@@ -2,6 +2,7 @@ import React from "react";
 import { BackgroundGradientAnimation } from "@/components/ui/background-gradient-animation";
 import { Button } from "../ui/moving-border";
 import Image from "next/image";
+import { DialogDemo } from "../ui/registerForm";
 
 function Hero() {
   return (
@@ -36,12 +37,13 @@ function Hero() {
             quis quia iure necessitatibus corrupti facere recusandae laudantium
             ullam minus quaerat?
           </p>
-          <Button
+          {/* <Button
             borderRadius="2.25rem"
             className="bg-white dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800"
           >
             Register Yourself
-          </Button>
+          </Button> */}
+          <DialogDemo/>
         </div>
       </BackgroundGradientAnimation>
     </>

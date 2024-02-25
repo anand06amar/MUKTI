@@ -11,6 +11,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between">
       <FloatingNav navItems={[{name:'Register' , link:'Register'} , {name:'TimeLine' , link:'helo'}]}/>
+      <div className="flex flex-wrap gap-6 items-center justify-center">
       <ThreeDCardDemo>
         <Image
           src="/images/speaker_3.png"
@@ -20,6 +21,25 @@ export default function Home() {
           alt="thumbnail"
         />
       </ThreeDCardDemo>
+      <ThreeDCardDemo>
+        <Image
+          src="/images/speaker_3.png"
+          // height="1000"
+          // width="1000"
+          className=" object-cover rounded-xl group-hover/card:shadow-xl"
+          alt="thumbnail"
+        />
+      </ThreeDCardDemo>
+      <ThreeDCardDemo>
+        <Image
+          src="/images/speaker_3.png"
+          // height="1000"
+          // width="1000"
+          className=" object-cover rounded-xl group-hover/card:shadow-xl"
+          alt="thumbnail"
+        />
+      </ThreeDCardDemo>
+      </div>
 
       <AboutUs />
     </main>

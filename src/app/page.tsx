@@ -7,12 +7,14 @@ import Image from "next/image";
 import  {NavbarFloat}  from "@/components/navbar/Navbar";
 import Sponsors from "@/components/footer/Sponsors";
 import { ThreeDCardDemo } from "@/components/speakers/3Dcard";
+import Counter from "@/components/countdown/counter";
 
 export default function Home() {
   return (
     <>
     <NavbarFloat/>
     <Hero />
+    <Counter /> 
     <ThreeDCardDemo />
     <Sponsors />
     <AboutUs />

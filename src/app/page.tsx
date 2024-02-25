@@ -5,13 +5,14 @@ import { FloatingNav } from "@/components/ui/floating-navbar";
 import { TracingBeam } from "@/components/ui/tracing-beam";
 import {ThreeDCardDemo} from "@/components/speakers/3Dcard";
 import Image from "next/image";
-// import joban from "@/public/images/speaker_3.jpeg";
+import { NavbarFloat } from "@/components/navbar/Navbar";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between">
-      <FloatingNav navItems={[{name:'Register' , link:'Register'} , {name:'TimeLine' , link:'helo'}]}/>
-      <div className="flex flex-wrap gap-6 items-center justify-center">
+    <>
+    <NavbarFloat/>
+    <Hero />
+    <AboutUs />
       <ThreeDCardDemo>
         <Image
           src="/images/speaker_3.png"
@@ -39,9 +40,6 @@ export default function Home() {
           alt="thumbnail"
         />
       </ThreeDCardDemo>
-      </div>
-
-      <AboutUs />
-    </main>
+    </>
   );
 }

@@ -16,7 +16,7 @@ export default function Home() {
     <>
     <NavbarFloat/>
     <Hero />
-    <Counter /> 
+    <Counter/>
     <ThreeDCardDemo />
     <AnimatedPinDemo />
     <TimeLine/>

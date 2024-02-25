@@ -16,12 +16,11 @@ function Hero() {
         thirdColor="243, 159, 90"
       >
         <Spotlight/>
-        <div className="flex flex-col gap-4 justify-center items-center mx-auto max-w-[80%] h-screen">
+        <div className="flex flex-col gap-4 justify-center items-center mx-auto max-w-[80%] h-screen overflow-hidden">
           <div className="bg-clip-text absolute top-28 text-5xl lg:text-hero-font text-transparent drop-shadow-2xl tracking-widest font-bold bg-gradient-to-b from-white/40 to-white/10 opacity-30">
             MUKTI
           </div>
           {/* <img src="Ellipse.png" alt="." /> */}
-          {/* <Image src={Ellise.png} alt="" /> */}
           <h1 className="uppercase text-3xl lg:text-7xl font-bold text-white lg:ml-60 mr-auto">
             Mukti
           </h1>

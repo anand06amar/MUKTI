@@ -1,5 +1,5 @@
 import React from 'react'
-import { BackgroundGradientAnimation } from './background-gradient-animation'
+import { BackgroundGradientAnimation } from '../ui/background-gradient-animation'
 
 function Hero() {
   return (

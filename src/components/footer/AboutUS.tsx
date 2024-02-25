@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { LampDemo } from "./test";
+import { LampDemo } from "../test";
 
 export default function AboutUs(){
 
@@ -13,18 +13,14 @@ export default function AboutUs(){
                 </div>
 
         </div>
-            <div className='flex justify-end pt-7 pr-[8%]'>
-                <div className="w-[40%] font-bold">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui rerum accusamus atque, iure enim incidunt provident sit ad nam illo voluptatum quo adipisci repudiandae quasi. Adipisci sapiente commodi praesentium sequi!
+            <div className='flex justify-end pt-7 lg:pr-[8%]'>
+                <div className="w-[70%] lg:w-[40%] font-bold">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui rerum accusamus atque, iure enim incidunt provident sit ad nam illo voluptatum quo adipisci repudiandae quasi. Adipisci sapiente commodi praesentium sequi!
             Laudantium, eaque. Expedita, voluptatum voluptates? Laudantium ut accusamus dignissimos laboriosam possimus, ex magnam qui expedita pariatur tempora repellendus inventore deserunt minus! Suscipit corporis nihil adipisci non magnam libero, vero dolorum!</div>
-
-
-
-            
 </div>    
 
-    <div className='absolute bottom-0 w-full'>
+    <div className='absolute bottom-20 lg:bottom-0 w-full'>
         <h1 className='text-center font-bold text-4xl'>Contact Us</h1>
-        <div className='w-full flex justify-center gap-[8%] pt-6'>
+        <div className='w-full flex justify-center gap-[4%] pt-6'>
             <Link href=''>
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="white" d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3 8h-1.35c-.538 0-.65.221-.65.778v1.222h2l-.209 2h-1.791v7h-3v-7h-2v-2h2v-2.308c0-1.769.931-2.692 3.029-2.692h1.971v3z"/></svg>
 

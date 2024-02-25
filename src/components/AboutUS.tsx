@@ -1,4 +1,4 @@
-import { LampDemo } from "./test";
+// import { LampDemo } from "./test";
 
 export default function AboutUs(){
 

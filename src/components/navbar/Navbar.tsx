@@ -20,28 +20,28 @@ function Navbar({ className }: { className?: string }) {
     >
       <Menu setActive={setActive}>
         <MenuItem setActive={setActive} active={active} item="Speakers">
-          <ProductItem
+          {/* <ProductItem
             title="Speakers"
             description="Meet the speakers"
             href="#speakers"
             src="/speakers.jpg"
-          />
+          /> */}
         </MenuItem>
         <MenuItem setActive={setActive} active={active} item="Sponsors">
-        <ProductItem
+          {/* <ProductItem
             title="Sponsors"
             description="Our sponsors"
             href="#sponsors"
             src="/speakers.jpg"
-          />
+          /> */}
         </MenuItem>
         <MenuItem setActive={setActive} active={active} item="About Us">
-          <ProductItem
+          {/* <ProductItem
             title="About Us"
             description="GNU/Linux User's Group"
             href="#about"
             src="/about-us.jpg"
-          />
+          /> */}
         </MenuItem>
       </Menu>
     </div>

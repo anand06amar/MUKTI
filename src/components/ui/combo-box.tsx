@@ -57,7 +57,7 @@ export function ComboboxDemo({year}:{year:React.Dispatch<React.SetStateAction<st
           <CaretSortIcon className="ml-2 h-4 w-4 shrink-0 opacity-50" />
         </Button>
       </PopoverTrigger>
-      <PopoverContent className="w-[200px] p-0">
+      <PopoverContent className="w-[200px] p-0 text-white">
         <Command>
           <CommandInput placeholder="Search years..." className="h-9" />
           <CommandEmpty>No years found.</CommandEmpty>

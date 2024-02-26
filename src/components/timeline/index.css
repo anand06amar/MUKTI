@@ -203,8 +203,8 @@
 
 .shedule-tabs .tab-buttons li {
     position: relative;
-    float: left;
-    min-width: 215px;
+    float: center;
+    min-width: 250px;
     background-color: #f14b59;
     font-size: 20px;
     line-height: 30px;

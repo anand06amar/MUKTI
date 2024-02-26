@@ -118,7 +118,7 @@ const Timeline: React.FC = () => {
             <h2 className="text-3xl lg:text-5xl font-bold text-white p-10">Schedule Plan</h2>
           </div>
 
-          <div className="shedule-tabs tabs-box p-10 mx-10 flex items-center justify-center">
+          <div className="shedule-tabs tabs-box p-10 mx-auto flex items-center justify-center">
             {/* <div className="btns-box">
                         <!--Tabs Box--> */}
             <ul className="tab-buttons clearfix">

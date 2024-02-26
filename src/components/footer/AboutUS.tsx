@@ -4,7 +4,7 @@ import { LampDemo } from "../test";
 export default function AboutUs() {
   return (
     <div
-      style={{ backgroundColor: "#F39F5A", height: "100vh", width: "100%" }}
+      style={{ backgroundColor: "#F39F5A", minHeight: "75vh", width: "100%" }}
       className="relative"
     >
       <div className="flex justify-end">

@@ -9,19 +9,19 @@ export default function AboutUs() {
     >
       <div className="flex justify-end">
         <div className=" mx-auto pt-[4rem]">
-          <h1 className="text-3xl lg:text-5xl font-bold text-center">About Us</h1>
+          <h1 className="text-2xl lg:text-5xl font-bold text-center md:text-2xl">About Us</h1>
           <h2 className="text-xl font-bold pt-12">
             GNU/Linux Users&apos; Group
           </h2>
         </div>
       </div>
       <div className="flex justify-center pt-7 text-center">
-        <div className="w-[70%] lgz:w-[40%] font-bold">
-        The GNU/Linux Users’ Group of NIT Durgapur (NITDGP LUG) is a community of GNU/Linux users and promoters of Free and Open Source Software. The Group was established in 2003 by a bunch of FOSS enthusiasts with the objective of spreading awareness about the world of Free and Open Source Softwares and popularising their use in the campus. Since then the group has evolved into a body that is now an active part of the open source community through numerous contributions to a wide range of open source projects. The group strives hard to introduce the philosophy and encourage the use of FOSS across all departments of study, here at NIT Durgapur. We, the members, believe that Software freedom is as essential as the civil liberty of freedom of Speech.
+        <div className="w-[70%] lgz:w-[40%] font-bold mb-20">
+        The GNU/Linux Users&apos; Group of NIT Durgapur (NITDGP LUG) is a community of GNU/Linux users and promoters of Free and Open Source Software. The Group was established in 2003 by a bunch of FOSS enthusiasts with the objective of spreading awareness about the world of Free and Open Source Softwares and popularising their use in the campus. Since then the group has evolved into a body that is now an active part of the open source community through numerous contributions to a wide range of open source projects. The group strives hard to introduce the philosophy and encourage the use of FOSS across all departments of study, here at NIT Durgapur. We, the members, believe that Software freedom is as essential as the civil liberty of freedom of Speech.
         </div>
       </div>
 
-      <div className="absolute bottom-0 w-full" id="about">
+      <div className="lg:absolute md:absolute sm:mt-10 sm:p-8 bottom-0 w-full" id="about">
         <h1 className="text-center font-bold text-4xl">Contact Us</h1>
         <div className="w-full flex justify-center gap-[4%] pt-6">
           <Link href="https://www.facebook.com/nitdgplug">

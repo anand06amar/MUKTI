@@ -22,7 +22,7 @@ const day2 = [
     time: "10:00am - 11:00am",
     venue: "To be released",
     description:
-      "A technology company that builds economic infrastructure for the internet.",
+      "Join us for a workshop with Joban Singh, a Microsoft developer specializing in cutting-edge web technologies. Don't miss this opportunity to learn from his expertise!",
     link: "#",
   },
  
@@ -31,7 +31,7 @@ const day2 = [
     time:  "2:00pm - 4:00pm",
     venue: "To be released",
     description:
-      "A technology company that builds economic infrastructure for the internet.",
+      "we're excited to introduce our Tech Mentorship event. Join us as we guide you through various tech stacks from scratch, helping you gain clarity and confidence in your understanding. Don't miss this opportunity to level up your skills and embark on your tech journey with us!",
     link: "#",
   },
   {
@@ -39,7 +39,7 @@ const day2 = [
     time: "4:00 pm to 4:30 pm",
     venue: "To be released",
     description:
-      "A technology company that builds economic infrastructure for the internet.",
+      "Join us as we conclude our exploration of the exciting world of FOSS at the closing ceremony of MUKTI.",
     link: "#",
   },
 ]
@@ -50,7 +50,7 @@ const day1 = [
     time: "10:00 AM - 11:00 AM",
     venue: "To be released",
     description:
-      "A technology company that builds economic infrastructure for the internet.",
+      "Join us as we unveil the exciting world of FOSS at the opening ceremony of MUKTI.",
     link: "#",
   },
   {
@@ -58,7 +58,7 @@ const day1 = [
     time: "11AM - 12:00 PM",
     venue: "To be released",
     description:
-      "A technology company that builds economic infrastructure for the internet.",
+      "Join us for a workshop with Abhas Abhinav, founder & hacker-in-charge at DeepRoot GNU/Linux. Abash is a skilled entrepreneur specializing in free software and hardware. Don't miss this chance to gain valuable insights from his expertise!",
     link: "#",
   },
   
@@ -67,7 +67,7 @@ const day1 = [
     time: "2:00PM - 4:00PM",
     venue: "To be released",
     description:
-      "A technology company that builds economic infrastructure for the internet.",
+      "Join us for a workshop with Abhas Abhinav, founder & hacker-in-charge at DeepRoot GNU/Linux. Abash is a skilled entrepreneur specializing in free software and hardware. Don't miss this chance to gain valuable insights from his expertise!",
     link: "#",
   },
   
@@ -76,7 +76,7 @@ const day1 = [
     time: "6:00PM - 8:00PM",
     venue: "To be released",
     description:
-      "A technology company that builds economic infrastructure for the internet.",
+      "Welcome back to our Tech Mentorship event! Dive back in as we continue guiding you through various tech stacks from scratch. Don't miss this chance to level up your skills and embark on your tech journey with us!",
     link: "#",
   },
   

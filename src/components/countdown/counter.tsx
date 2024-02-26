@@ -44,7 +44,7 @@ export default function Counter() {
   return (
     <section className="coming-soon-section w-[100%]">
       <div className="flex flex-row auto-container justify-center lg:justify-end relative -top-20">
-        <div className="w-[80%] bg-[#F39F5A] text-black font-bold rounded-xl lg:rounded-l-xl ps-10 pe-10 lg:flex">
+        <div className="w-[80%] lg:w-[70%] bg-[#F39F5A] text-black font-bold rounded-xl lg:rounded-l-xl ps-10 pe-10 lg:flex">
           <div className="title-column  items-center flex justify-center">
             <div className="inner-column hidden lg:block none">
               <div className="text-5xl  text-center font-bold text-slate-800 lg:text-start ">Count Every<br></br>Second Until<br></br>the Event</div>
@@ -67,16 +67,16 @@ export default function Counter() {
           <div className="timer-column">
             <div className="inner-column">
               <div className="time-counter">
-                <div className="time-countdown clearfix flex flex-wrap lg:ml-20 gap-10 m-2 pb-10 pt-10  justify-center lg:justify-end ">
-                  <div className="counter-column flex flex-col gap-4 font-semibold justify-center items-center text-[#212639] text-mlg"><span className="count font-bold text-slate-800 text-2xl  lg:text-7xl ">{days} </span>Days</div>
+                <div className="time-countdown clearfix flex flex-wrap md:ml-20 gap-10 m-2 pb-10 pt-10  justify-center lg:justify-end ">
+                  <div className="counter-column flex flex-col gap-4 font-semibold justify-center items-center text-[#212639] text-lg"><span className="count font-bold text-slate-800 text-2xl  lg:text-7xl ">{days} </span>Days</div>
                   <div className="text-[#212639] lg:block hidden text-4xl mt-1">:</div>
-                  <div className="counter-column flex flex-col gap-4 font-semibold justify-center items-center text-[#212639] text-mlg"><span className="count font-bold text-slate-800 text-2xl lg:text-7xl ">{hours} </span>Hours</div>
+                  <div className="counter-column flex flex-col gap-4 font-semibold justify-center items-center text-[#212639] text-lg"><span className="count font-bold text-slate-800 text-2xl lg:text-7xl ">{hours} </span>Hours</div>
                   <div className="text-[#212639] lg:block text-4xl mt-1 hidden sm:block">:</div>
 
 
-                  <div className="counter-column flex flex-col gap-4 font-semibold justify-center items-center text-[#212639] text-mlg"><span className="count font-bold text-slate-800 text-2xl lg:text-7xl ">{minutes} </span>Minutes</div>
+                  <div className="counter-column flex flex-col gap-4 font-semibold justify-center items-center text-[#212639] text-lg"><span className="count font-bold text-slate-800 text-2xl lg:text-7xl ">{minutes} </span>Minutes</div>
                   <div className="text-[#212639] lg:block hidden text-4xl mt-1">:</div>
-                  <div className="counter-column flex flex-col gap-4 font-semibold justify-center items-center text-[#212639] text-mlg"><span className="count font-bold text-slate-800 text-2xl lg:text-7xl ">{seconds} </span>Seconds</div>
+                  <div className="counter-column flex flex-col gap-4 font-semibold justify-center items-center text-[#212639] text-lg"><span className="count font-bold text-slate-800 text-2xl lg:text-7xl ">{seconds} </span>Seconds</div>
                 </div>
               </div>
             </div>

@@ -118,14 +118,14 @@ const Timeline: React.FC = () => {
             <h2 className="text-3xl lg:text-5xl font-bold text-white p-10">Schedule Plan</h2>
           </div>
 
-          <div className="shedule-tabs tabs-box p-10 ml-10 flex items-center justify-center">
+          <div className="shedule-tabs tabs-box p-10 mx-10 flex items-center justify-center">
             {/* <div className="btns-box">
                         <!--Tabs Box--> */}
             <ul className="tab-buttons clearfix">
-              <li className="tab-btn" data-tab="#tab-2" onClick={() => setDay(1)}>
+              <li id="day-1" className={"tab-btn " + `${day === 1 ? "active-border":""}`} data-tab="#tab-2" onClick={() => setDay(1)}>
                 First Day <span>March 2, 2024</span>
               </li>
-              <li className="tab-btn" data-tab="#tab-3" onClick={() => setDay(2)}>
+              <li id="day-2" className={"tab-btn " + `${day === 2 ? "active-border":""}`} data-tab="#tab-3" onClick={() => setDay(2)}>
                 Second Day <span>March 3, 2024</span>
               </li>
             </ul>

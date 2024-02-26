@@ -8,14 +8,14 @@ export default function AboutUs() {
       className="relative"
     >
       <div className="flex justify-end">
-        <div className=" pr-[18%] pt-[4rem]">
-          <h1 className="text-5xl font-bold">About Us</h1>
+        <div className=" mx-auto pt-[4rem]">
+          <h1 className="text-3xl lg:text-5xl font-bold text-center">About Us</h1>
           <h2 className="text-xl font-bold pt-12">
             GNU/Linux Users&apos; Group
           </h2>
         </div>
       </div>
-      <div className="flex justify-end pt-7 lg:pr-[8%]">
+      <div className="flex justify-center pt-7 text-center">
         <div className="w-[70%] lgz:w-[40%] font-bold">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ipsam accusamus deleniti id. Distinctio ea laudantium, quisquam fugiat tempore voluptas aliquam eius. Soluta maiores deserunt inventore. Ut et qui dolore veritatis ullam ad asperiores officia quam repudiandae ipsum. Sunt, deserunt?
         </div>

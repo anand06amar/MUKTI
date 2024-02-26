@@ -76,11 +76,6 @@ export function DialogDemo() {
             </Label>
             <Input id="college" onChange={(e) => setInstitute(e.target.value)} value={institute} className="col-span-3 bg-slate-900" />
           </div>
-          <div className="grid grid-cols-4 items-center gap-4">
-            <Label htmlFor="college" className="text-right">
-              Events
-            </Label>
-          </div>
           <div className="flex justify-center">
             <ComboboxDemo year={setYear} />
             {/* <Input id="year" value="1" className="col-span-3 bg-slate-900" /> */}

@@ -19,7 +19,7 @@ interface TimelineItemData {
 const day2 = [
   {
     title: "Joban DevOps workshop",
-    time: "10am - 11am",
+    time: "10:00am - 11:00am",
     venue: "To be released",
     description:
       "A technology company that builds economic infrastructure for the internet.",
@@ -28,7 +28,7 @@ const day2 = [
  
   {
     title: "Tech mentorship",
-    time:  "2pm - 4pm",
+    time:  "2:00pm - 4:00pm",
     venue: "To be released",
     description:
       "A technology company that builds economic infrastructure for the internet.",

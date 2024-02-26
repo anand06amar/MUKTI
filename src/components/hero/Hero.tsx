@@ -33,9 +33,8 @@ function Hero() {
             Mukti
           </h1>
           <p className="lg:max-w-3xl z-10 font-light">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime
-            quis quia iure necessitatibus corrupti facere recusandae laudantium
-            ullam minus quaerat?
+          NIT Durgapur's official FOSS conference MUKTI, a celebration of Free and Open Source Software (FOSS)!
+Dive into a vibrant environment where top FOSS innovators share real-world insights. Connect with like-minded enthusiasts and speakers, exploring the transformative potential of open-source software.
           </p>
           {/* <Button
             borderRadius="2.25rem"

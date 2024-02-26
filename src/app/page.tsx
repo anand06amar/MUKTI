@@ -10,6 +10,8 @@ import { ThreeDCardDemo } from "@/components/speakers/3Dcard";
 import Counter from "@/components/countdown/counter";
 import TimeLine from "@/components/timeline/TimeLine";
 import { Card } from "@/components/speakers/Card";
+import { Card2 } from "@/components/speakers/Card2";
+
 
 export default function Home() {
   return (
@@ -20,7 +22,7 @@ export default function Home() {
       <div className="flex justify-center text-3xl font-bold font-lalezar">Our Speakers</div>
       <div className="flex flex-col lg:flex-row justify-center">
         <Card />
-        <Card />
+        <Card2 />
       </div>
       <TimeLine />
       <Sponsors />

@@ -17,7 +17,7 @@ export default function AboutUs() {
       </div>
       <div className="flex justify-center pt-7 text-center">
         <div className="w-[70%] lgz:w-[40%] font-bold">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ipsam accusamus deleniti id. Distinctio ea laudantium, quisquam fugiat tempore voluptas aliquam eius. Soluta maiores deserunt inventore. Ut et qui dolore veritatis ullam ad asperiores officia quam repudiandae ipsum. Sunt, deserunt?
+        The GNU/Linux Users’ Group of NIT Durgapur (NITDGP LUG) is a community of GNU/Linux users and promoters of Free and Open Source Software. The Group was established in 2003 by a bunch of FOSS enthusiasts with the objective of spreading awareness about the world of Free and Open Source Softwares and popularising their use in the campus. Since then the group has evolved into a body that is now an active part of the open source community through numerous contributions to a wide range of open source projects. The group strives hard to introduce the philosophy and encourage the use of FOSS across all departments of study, here at NIT Durgapur. We, the members, believe that Software freedom is as essential as the civil liberty of freedom of Speech.
         </div>
       </div>
 

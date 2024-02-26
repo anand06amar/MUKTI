@@ -23,6 +23,7 @@ export function DialogDemo() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [mobile, setMobile] = useState("");
+  const [roll, setRoll] = useState("");
   const [year, setYear] = useState("1");
   const [institute, setInstitute] = useState("");
   const [error, setError] = useState(false);
@@ -33,6 +34,7 @@ export function DialogDemo() {
       mobile.length === 10 &&
       name !== "" &&
       email !== "" &&
+      roll !== "" &&
       institute !== "" &&
       year !== ""
     ) {
@@ -41,6 +43,7 @@ export function DialogDemo() {
         email: email,
         mobile: mobile,
         year: year,
+        roll:roll,
         institute: institute,
       })
         .then(() => setSuccess(true))
@@ -128,6 +131,17 @@ export function DialogDemo() {
                 id="college"
                 onChange={(e) => setInstitute(e.target.value)}
                 value={institute}
+                className="col-span-3 bg-slate-900"
+              />
+            </div>
+            <div className="grid grid-cols-4 items-center gap-4">
+              <Label htmlFor="roll" className="text-right">
+                Roll No.
+              </Label>
+              <Input
+                id="roll"
+                onChange={(e) => setRoll(e.target.value)}
+                value={roll}
                 className="col-span-3 bg-slate-900"
               />
             </div>

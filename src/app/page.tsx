@@ -13,11 +13,11 @@ import { Card } from "@/components/speakers/Card";
 
 export default function Home() {
   return (
-    <>
+    <div className="overflow-x-hidden">
       <NavbarFloat />
       <Hero />
       <Counter />
-      <div className="flex justify-center text-3xl font-lalezar">Our Speakers</div>
+      <div className="flex justify-center text-3xl font-bold font-lalezar">Our Speakers</div>
       <div className="flex flex-col lg:flex-row justify-center">
         <Card />
         <Card />
@@ -25,6 +25,6 @@ export default function Home() {
       <TimeLine />
       <Sponsors />
       <AboutUs />
-    </>
+    </div>
   );
 }

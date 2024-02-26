@@ -115,7 +115,7 @@ const Timeline: React.FC = () => {
       <div className="shedule-section">
         <div className="auto-container">
           <div className="sec-title flex items-center justify-center">
-            <h2 className="text-5xl  font-bold text-white p-10">Schedule Plan</h2>
+            <h2 className="text-3xl lg:text-5xl font-bold text-white p-10">Schedule Plan</h2>
           </div>
 
           <div className="shedule-tabs tabs-box p-10 ml-10 flex items-center justify-center">

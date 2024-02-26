@@ -10,11 +10,11 @@ import XIcon from '@mui/icons-material/X';
 export function Card() {
   return (
     
-    <div className="cardHolder mx-20 h-[400px] w-[320px]">
-    <div className="relative speakerCard mt-10 flex flex-row border-[3px] border-[#ae445a] h-[350px] w-[300px] lg:rounded-3xl ">
+    <div id="speakers" className="cardHolder mx-auto lg:mx-20 h-[400px] w-[320px]">
+    <div className="relative mx-auto speakerCard mt-10 flex flex-row border-[3px] border-[#ae445a] h-[350px] w-[300px] lg:rounded-3xl ">
     <Image
             src="/images/speaker_3.png"
-             height="1000"
+            height="1000"
             width="1000"
             className=" h-[344px] w-[250px] object-cover mb-[53px] pb-30 rounded-xl group-hover/card:shadow-xl"
             alt="thumbnail"

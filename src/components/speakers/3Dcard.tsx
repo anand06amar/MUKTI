@@ -6,7 +6,7 @@ import { CardBody, CardContainer, CardItem } from "./3d-card";
 export function ThreeDCardDemo() {
   return (
     <>
-    <div id='sponsors'>
+    <div id='speakers'>
         <h1 className="text-5xl mt-4 font-bold text-center">Speakers</h1>
     </div>
     <CardContainer className="inter-var">

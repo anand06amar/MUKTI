@@ -17,13 +17,7 @@ export default function AboutUs() {
       </div>
       <div className="flex justify-end pt-7 lg:pr-[8%]">
         <div className="w-[70%] lgz:w-[40%] font-bold">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui rerum
-          accusamus atque, iure enim incidunt provident sit ad nam illo
-          voluptatum quo adipisci repudiandae quasi. Adipisci sapiente commodi
-          praesentium sequi! Laudantium, eaque. Expedita, voluptatum voluptates?
-          Laudantium ut accusamus dignissimos laboriosam possimus, ex magnam qui
-          expedita pariatur tempora repellendus inventore deserunt minus!
-          Suscipit corporis nihil adipisci non magnam libero, vero dolorum!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ipsam accusamus deleniti id. Distinctio ea laudantium, quisquam fugiat tempore voluptas aliquam eius. Soluta maiores deserunt inventore. Ut et qui dolore veritatis ullam ad asperiores officia quam repudiandae ipsum. Sunt, deserunt?
         </div>
       </div>
 

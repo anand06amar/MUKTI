@@ -1,0 +1,603 @@
+.timeline {
+  margin-bottom: 4em;
+}
+
+.test {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.date-content-wrapper {
+  margin-top: 4em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  align-items: center;
+}
+.date-wrapper {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.content {
+  margin-left: 10vw;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: flex-start;
+  justify-content: center;
+}
+.timeline-heading {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+.timeline-desc {
+  margin-top: 1em;
+  font-size: 1em;
+  color: #c4c4c4;
+}
+.middle-border {
+  width: 5px;
+  background-color: var(--fc-blue);
+  height: 110px;
+  display: block;
+}
+.starting-border {
+  display: none;
+  width: 3px;
+  background-color: var(--fc-blue);
+  height: 200px;
+}
+@media screen and (max-width: 800px) {
+  .date-content-wrapper {
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: 30px;
+  }
+  .middle-border {
+    display: none;
+  }
+  .date-wrapper {
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 2rem;
+    justify-content: flex-start;
+  }
+
+  .content {
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .starting-border {
+    display: block;
+  }
+  .month {
+    margin-right: 10px;
+  }
+  .test {
+    margin-left: 20px;
+    display: flex;
+    max-width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 500px) {
+  .date-wrapper {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+  .timeline-heading {
+    font-size: 1.3rem;
+  }
+  .content {
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .time {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .date-wrapper {
+    font-size: 1.5rem;
+  }
+  .timeline-heading {
+    font-size: 1rem;
+  }
+
+  .content {
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    text-align: left;
+  }
+}
+@media screen and (max-width: 350px) {
+  .date-wrapper {
+    font-size: 1.3rem;
+  }
+  .timeline-heading {
+    font-size: 1rem;
+  }
+}
+
+.shedule-section {
+    position: relative;
+    padding: 145px 0 135px;
+}
+
+.shedule-section:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    /* background-image: url(../images/icons/pattern-1.jpg); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    content: "";
+}
+
+.shedule-section .sec-title .title {
+    margin-bottom: 25px;
+}
+
+.shedule-section .sec-title h2 {
+    padding-bottom: 40px;
+}
+
+.tabs-box {
+    position: relative;
+}
+
+.tabs-box .tab {
+    display: none;
+}
+
+.tabs-box .tab.active-tab {
+    display: block;
+}
+
+.shedule-section .sec-title {
+    margin-bottom: 0;
+}
+
+.shedule-section .sec-title h2:before {
+    right: -80px;
+}
+
+.shedule-tabs {
+    position: relative;
+}
+
+.shedule-tabs .btns-box {
+    position: relative;
+    display: block;
+    text-align: right;
+    margin-bottom: 50px;
+    margin-top: -100px;
+}
+
+.shedule-tabs .tab-buttons {
+    position: relative;
+    display: inline-block;
+}
+
+.shedule-tabs .tab-buttons li {
+    position: relative;
+    float: left;
+    min-width: 215px;
+    background-color: #f14b59;
+    font-size: 20px;
+    line-height: 30px;
+    color: #fffefe;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 22px 15px 28px;
+    cursor: pointer;
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    transition: all 300ms ease;
+}
+
+.shedule-tabs .tab-buttons li span {
+    position: relative;
+    display: block;
+    font-size: 14px;
+    line-height: 20px;
+    color: #fffefe;
+    font-weight: 400;
+    text-transform: capitalize;
+    opacity: .60;
+}
+
+.shedule-tabs .tab-buttons li:before {
+    position: absolute;
+    left: 50%;
+    margin-left: -8px;
+    bottom: -8px;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    opacity: 0;
+    border-top: 8px solid #f14b59;
+    content: "";
+}
+
+.shedule-tabs .tab-buttons li:nth-child(2) {
+    background-color: #454ab4;
+}
+
+.shedule-tabs .tab-buttons li:nth-child(3) {
+    background-color: #ffa200;
+}
+
+.shedule-tabs .tab-buttons li:nth-child(2):before {
+    border-top: 8px solid #454ab4;
+}
+
+.shedule-tabs .tab-buttons li:nth-child(3):before {
+    border-top: 8px solid #ffa200;
+}
+
+.shedule-tabs .tab-buttons li.active-btn {
+    box-shadow: 0 12px 40px rgba(8, 18, 109, .12);
+}
+
+.shedule-tabs .tab-buttons li.active-btn:before {
+    opacity: 1;
+}
+
+.shedule-block {
+    position: relative;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #f2f4f7;
+}
+
+.shedule-block:before {
+    position: absolute;
+    left: 0;
+    top: 0%;
+    height: 0;
+    width: 100%;
+    content: "";
+    background: rgb(241, 75, 89);
+    background: -moz-linear-gradient(left, rgba(241, 75, 89, 1) 0%, rgba(69, 74, 180, 1) 50%, rgba(255, 162, 0, 1) 100%);
+    background: -webkit-linear-gradient(left, rgba(241, 75, 89, 1) 0%, rgba(69, 74, 180, 1) 50%, rgba(255, 162, 0, 1) 100%);
+    background: linear-gradient(to right, rgba(241, 75, 89, 1) 0%, rgba(69, 74, 180, 1) 50%, rgba(255, 162, 0, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f14b59', endColorstr='#ffa200', GradientType=1);
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+.shedule-block:hover:before {
+    height: 100%;
+    top: 0;
+}
+
+.shedule-block .inner-box {
+    position: relative;
+    padding: 20px 35px 15px;
+    padding-left: 135px;
+    background-color: #ffffff;
+}
+
+.shedule-block .thumbs-box {
+    position: absolute;
+    left: 35px;
+    top: 25px;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.shedule-block .thumbs-box img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.shedule-block .content-box {
+    position: relative;
+    float: left;
+    max-width: 670px;
+    width: 100%;
+}
+
+.shedule-block .date {
+    position: relative;
+    display: block;
+    font-size: 16px;
+    line-height: 30px;
+    color: #212639;
+    font-weight: 500;
+    margin-bottom: 3px;
+}
+
+.shedule-block .date .icon {
+    position: relative;
+    float: left;
+    font-size: 18px;
+    line-height: 30px;
+    color: #f14b59;
+    margin-right: 10px;
+}
+
+.shedule-block h4 {
+    position: relative;
+    display: block;
+    font-size: 30px;
+    line-height: 1em;
+    color: #212639;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.shedule-block h4 a {
+    color: #212639;
+    display: inline-block;
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    transition: all 300ms ease;
+}
+
+.shedule-block h4 a:hover {
+    color: #f14b59;
+}
+
+.shedule-block .text {
+    display: block;
+    font-size: 15px;
+    line-height: 26px;
+    color: #848484;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.shedule-block .shedule-info {
+    position: relative;
+}
+
+.shedule-block .shedule-info li {
+    position: relative;
+    float: left;
+    margin-right: 20px;
+    padding-right: 20px;
+    font-size: 16px;
+    line-height: 30px;
+    color: #212639;
+    font-weight: 400;
+    border-right: 2px dashed #f2f4f7;
+}
+
+.shedule-block .shedule-info li:last-child {
+    border-right: 0;
+}
+
+.shedule-block .shedule-info li span {
+    color: #848484;
+}
+
+.shedule-block .shedule-info li a {
+    color: #f14b59;
+    font-weight: 500;
+    display: inline-block;
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    transition: all 300ms ease;
+}
+
+.shedule-block .shedule-info li a:hover {
+    color: #222222;
+}
+
+.shedule-block .btn-box {
+    position: relative;
+    float: right;
+    padding-top: 80px;
+}
+
+.shedule-block .btn-box a {
+    padding: 14px 40px;
+    line-height: 20px;
+    font-size: 15px;
+}
+
+.shedule-block .btn-box a:hover {
+    box-shadow: 0 12px 40px rgba(8, 18, 109, .12);
+}
+
+/* === Shedule Section Style Two ===*/
+
+.shedule-section.style-two:before {
+    display: none;
+}
+
+.shedule-section.style-two .shedule-tabs .btns-box {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.shedule-section.style-two .tabs-content {
+    position: relative;
+    padding-left: 120px;
+}
+
+.shedule-section.style-two .shedule-tabs .tab-buttons {
+    position: absolute;
+    left: 100px;
+    top: 0;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+    -webkit-transform-origin: left top;
+    -moz-transform-origin: left top;
+    -ms-transform-origin: left top;
+    -o-transform-origin: left top;
+    transform-origin: left top;
+    z-index: 1;
+}
+
+.shedule-section.style-two .shedule-tabs .tab-buttons li {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.shedule-section.style-two .shedule-block {
+    background: rgba(255, 255, 255, .20);
+}
+
+.shedule-section.style-two .shedule-block .inner-box {
+    background-color: #ffffff;
+}
+
+.shedule-section.style-two .sec-title {
+    margin-bottom: 65px;
+}
+
+.shedule-section.style-two .sec-title h2:after {
+    bottom: -5px;
+}
+
+.shedule-section.style-two .icon-circle-5 {
+    top: -230px !important;
+    left: -510px !important;
+    opacity: .05;
+}
+
+.shedule-section.style-two .icon-circle-5:nth-child(2) {
+    left: -695px !important;
+    top: 150px !important;
+    opacity: .03;
+}
+
+/* === Shedule Section Style Three ===*/
+
+.shedule-section.style-three .shedule-tabs .btns-box {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.shedule-section.style-three .sec-title .title {
+    margin-bottom: 25px;
+}
+
+.shedule-section.style-three .sec-title {
+    margin-bottom: 60px;
+}
+
+.shedule-section.style-three .sec-title h2:before {
+    right: auto;
+    left: auto;
+}
+
+.shedule-section.style-three .sec-title h2:after {
+    bottom: -10px;
+}
+
+/* === Shedule Section Style Four ===*/
+
+.shedule-section.style-four {
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.shedule-section.style-four:before {
+    background-image: none;
+    background-color: #454ab4;
+    opacity: .70;
+}
+
+.shedule-section.style-four .icon-circle-5 {
+    top: -230px !important;
+    left: -510px !important;
+    opacity: .05;
+}
+
+.shedule-section.style-four .icon-circle-5:nth-child(2) {
+    left: -695px !important;
+    top: 150px !important;
+    opacity: .03;
+}
+
+.shedule-section.style-four .shedule-tabs .btns-box {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 50px;
+    border-bottom: 3px solid rgba(255, 255, 255, .15);
+}
+
+.shedule-section.style-four .sec-title .title {
+    margin-bottom: 25px;
+}
+
+.shedule-section.style-four .sec-title {
+    margin-bottom: 40px;
+}
+
+.shedule-section.style-four .sec-title h2:before {
+    right: auto;
+    left: auto;
+}
+
+.shedule-section.style-four .sec-title h2:after {
+    bottom: -10px;
+}
+
+.shedule-section.style-four .shedule-tabs .tab-buttons li {
+    font-size: 20px;
+    font-weight: 500;
+    background-color: transparent !important;
+    margin-bottom: -10px;
+    border-bottom: 5px solid transparent;
+}
+
+.shedule-section.style-four .shedule-tabs .tab-buttons li:before {
+    display: none;
+}
+
+.shedule-section.style-four .shedule-tabs .tab-buttons li.active-btn {
+    background-color: transparent;
+    box-shadow: none;
+    color: #e55361;
+    border-bottom: 5px solid #e55361;
+}
+
+.shedule-section.style-four .shedule-block {
+    background: rgba(255, 255, 255, .20);
+}

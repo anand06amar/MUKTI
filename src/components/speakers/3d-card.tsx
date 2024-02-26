@@ -17,11 +17,11 @@ const MouseEnterContext = createContext<
 export const CardContainer = ({
   children,
   className,
-  containerClassName,
+  containerclassName,
 }: {
   children?: React.ReactNode;
   className?: string;
-  containerClassName?: string;
+  containerclassName?: string;
 }) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const [isMouseEntered, setIsMouseEntered] = useState(false);
@@ -50,7 +50,7 @@ export const CardContainer = ({
       <div
         className={cn(
           "py-10 flex items-center justify-center",
-          containerClassName
+          containerclassName
         )}
         style={{
           perspective: "1000px",

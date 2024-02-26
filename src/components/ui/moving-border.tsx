@@ -14,8 +14,8 @@ export function Button({
   borderRadius = "1.75rem",
   children,
   as: Component = "button",
-  containerClassName,
-  borderClassName,
+  containerclassName,
+  borderclassName,
   duration,
   className,
   ...otherProps
@@ -23,8 +23,8 @@ export function Button({
   borderRadius?: string;
   children: React.ReactNode;
   as?: any;
-  containerClassName?: string;
-  borderClassName?: string;
+  containerclassName?: string;
+  borderclassName?: string;
   duration?: number;
   className?: string;
   [key: string]: any;
@@ -33,7 +33,7 @@ export function Button({
     <Component
       className={cn(
         "bg-transparent relative text-xl  h-16 w-40 p-[1px] overflow-hidden ",
-        containerClassName
+        containerclassName
       )}
       style={{
         borderRadius: borderRadius,
@@ -48,7 +48,7 @@ export function Button({
           <div
             className={cn(
               "h-20 w-20 opacity-[0.8] bg-[radial-gradient(var(--sky-500)_40%,transparent_60%)]",
-              borderClassName
+              borderclassName
             )}
           />
         </MovingBorder>

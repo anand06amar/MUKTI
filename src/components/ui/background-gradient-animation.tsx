@@ -16,7 +16,7 @@ export const BackgroundGradientAnimation = ({
   children,
   className,
   interactive = true,
-  containerClassName,
+  containerclassName,
 }: {
   gradientBackgroundStart?: string;
   gradientBackgroundEnd?: string;
@@ -31,7 +31,7 @@ export const BackgroundGradientAnimation = ({
   children?: React.ReactNode;
   className?: string;
   interactive?: boolean;
-  containerClassName?: string;
+  containerclassName?: string;
 }) => {
   const interactiveRef = useRef<HTMLDivElement>(null);
 
@@ -85,7 +85,7 @@ export const BackgroundGradientAnimation = ({
     <div
       className={cn(
         "h-screen w-screen relative overflow-hidden top-0 left-0 bg-[linear-gradient(40deg,var(--gradient-background-start),var(--gradient-background-end))]",
-        containerClassName
+        containerclassName
       )}
     >
       <svg className="hidden">

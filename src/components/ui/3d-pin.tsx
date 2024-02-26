@@ -8,13 +8,13 @@ export const PinContainer = ({
   title,
   href,
   className,
-  containerClassName,
+  containerclassName,
 }: {
   children: React.ReactNode;
   title?: string;
   href?: string;
   className?: string;
-  containerClassName?: string;
+  containerclassName?: string;
 }) => {
   const [transform, setTransform] = useState(
     "translate(-50%,-50%) rotateX(0deg)"
@@ -31,7 +31,7 @@ export const PinContainer = ({
     <div
       className={cn(
         "relative group/pin z-50  cursor-pointer",
-        containerClassName
+        containerclassName
       )}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}

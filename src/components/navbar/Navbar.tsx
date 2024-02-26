@@ -19,30 +19,33 @@ function Navbar({ className }: { className?: string }) {
       className={cn("fixed top-10 inset-x-0 max-w-2xl mx-auto z-50", className)}
     >
       <Menu setActive={setActive}>
-        <MenuItem setActive={setActive} active={active} item="Speakers">
-          {/* <ProductItem
+        <Link href="#speakers" >Speakers</Link>
+        <Link href="#sponsors">Sponsors</Link>
+        <Link href="#about">About Us</Link>
+        {/* <MenuItem setActive={setActive} active={active} item="Speakers">
+          <ProductItem
             title="Speakers"
             description="Meet the speakers"
             href="#speakers"
             src="/speakers.jpg"
-          /> */}
+          />
         </MenuItem>
         <MenuItem setActive={setActive} active={active} item="Sponsors">
-          {/* <ProductItem
+        <ProductItem
             title="Sponsors"
             description="Our sponsors"
             href="#sponsors"
             src="/speakers.jpg"
-          /> */}
+          />
         </MenuItem>
         <MenuItem setActive={setActive} active={active} item="About Us">
-          {/* <ProductItem
+          <ProductItem
             title="About Us"
             description="GNU/Linux User's Group"
             href="#about"
             src="/about-us.jpg"
-          /> */}
-        </MenuItem>
+          />
+        </MenuItem> */}
       </Menu>
     </div>
   );

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { LampDemo } from "../test";
 
 export default function AboutUs() {
@@ -9,14 +10,15 @@ export default function AboutUs() {
     >
       <div className="flex justify-end">
         <div className=" mx-auto pt-[4rem]">
-          <h1 className="text-2xl lg:text-5xl font-bold text-center md:text-2xl">About Us</h1>
-          <h2 className="text-xl font-bold pt-12">
+          <h1 className="text-4xl lg:text-5xl font-bold text-center md:text-2xl">About Us</h1>
+          {/* <Image src="/images/path939.png" alt="logo" height={24} width={24} /> */}
+          <h2 className="text-xl font-bold pt-4 lg:pt-12">
             GNU/Linux Users&apos; Group
           </h2>
         </div>
       </div>
       <div className="flex justify-center pt-7 text-center">
-        <div className="w-[70%] lgz:w-[40%] font-bold mb-20">
+        <div className="w-[70%] lgz:w-[40%]  mb-20">
         The GNU/Linux Users&apos; Group of NIT Durgapur (NITDGP GLUG) is a community of GNU/Linux users and promoters of Free and Open Source Software. The Group was established in 2003 by a bunch of FOSS enthusiasts with the objective of spreading awareness about the world of Free and Open Source Softwares and popularising their use in the campus. Since then the group has evolved into a body that is now an active part of the open source community through numerous contributions to a wide range of open source projects. The group strives hard to introduce the philosophy and encourage the use of FOSS across all departments of study, here at NIT Durgapur. We, the members, believe that Software freedom is as essential as the civil liberty of freedom of Speech.
         </div>
       </div>
@@ -65,9 +67,12 @@ export default function AboutUs() {
             </svg>
           </Link>
         </div>
+        <div className=" flex justify-center gap-[4%] pt-6">
+        
         <h4 className="text-center pt-5 pb-5 text-xl font-bold">
         ©GNU/Linux Users&apos; Group
         </h4>
+        </div>
       </div>
     </div>
   );

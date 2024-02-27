@@ -39,7 +39,7 @@ export function Card2() {
         </div>
       </div>
       <div className="text-[#ae445a] text-2xl pt-2 pl-2 pr-2 flex items-center justify-center font-bold z-10">Joban Singh</div>
-      <div className="text-[#e8bcb9] p-1 flex items-center justify-center font-bold opacity-80 z-10">Software Engineer @Microsoft Azure</div>
+      <div className="text-[#e8bcb9] p-1 flex items-center justify-center font-bold opacity-80 z-10">Keynote speaker at React Summit Amsterdam, EnterJS conf. & Software Engineer @Microsoft</div>
     </div>
   );
 }

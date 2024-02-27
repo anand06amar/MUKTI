@@ -21,7 +21,7 @@ export default function AboutUs() {
         </div>
       </div>
 
-      <div className="lg:absolute md:absolute sm:mt-10 sm:p-8 bottom-0 w-full" id="about">
+      <div className=" sm:mt-10 sm:p-8 bottom-0 w-full" id="about">
         <h1 className="text-center font-bold lg:text-5xl md:text-2xl text-2xl">Contact Us</h1>
         <div className="w-full flex justify-center gap-[4%] pt-6">
           <Link href="https://www.facebook.com/nitdgplug">

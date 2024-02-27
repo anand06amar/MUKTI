@@ -22,11 +22,11 @@ export const HoverEffect = ({
   className?: string;
 }) => {
   let [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
-
+  // grid grid-cols-1 gap-5 py-10 w-screen xl:-ml-[15%] lg:mx-auto md:-ml-[10%] sm:-ml-0
   return (
     <div
       className={cn(
-        "grid grid-cols-1 gap-5 py-10 w-screen xl:-ml-[15%] lg:mx-auto md:-ml-[5%] sm:-ml-0",
+        "flex flex-col gap-5 justify-center items-center",
         className
       )}
     >

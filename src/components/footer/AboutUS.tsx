@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { LampDemo } from "../test";
 
 export default function AboutUs() {
@@ -10,6 +11,7 @@ export default function AboutUs() {
       <div className="flex justify-end">
         <div className=" mx-auto pt-[4rem]">
           <h1 className="text-4xl lg:text-5xl font-bold text-center md:text-2xl">About Us</h1>
+          {/* <Image src="/images/path939.png" alt="logo" height={24} width={24} /> */}
           <h2 className="text-xl font-bold pt-4 lg:pt-12">
             GNU/Linux Users&apos; Group
           </h2>
@@ -65,9 +67,12 @@ export default function AboutUs() {
             </svg>
           </Link>
         </div>
+        <div className=" flex justify-center gap-[4%] pt-6">
+        
         <h4 className="text-center pt-5 pb-5 text-xl font-bold">
         ©GNU/Linux Users&apos; Group
         </h4>
+        </div>
       </div>
     </div>
   );

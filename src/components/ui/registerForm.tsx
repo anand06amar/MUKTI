@@ -145,9 +145,11 @@ export function DialogDemo() {
                 className="col-span-3 bg-slate-900"
               />
             </div>
-            <div className="flex justify-center">
+            <div className="grid grid-cols-4 items-center gap-4">
+              <Label htmlFor="year" className="text-right">
+                Year
+              </Label>
               <ComboboxDemo year={setYear} />
-              {/* <Input id="year" value="1" className="col-span-3 bg-slate-900" /> */}
             </div>
           </div>
 

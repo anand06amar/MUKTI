@@ -44,7 +44,7 @@ export default function Counter() {
   return (
     <section className="coming-soon-section w-[100%]">
       <div className="flex flex-row auto-container justify-center lg:justify-end relative -top-20">
-        <div className="w-[80%] lg:w-[70%] bg-[#F39F5A] text-black font-bold rounded-xl lg:rounded-l-xl ps-10 pe-10 lg:flex">
+        <div className="w-[80%] lg:w-[70%] bg-[#F39F5A] text-black font-bold rounded-xl lg:rounded-l-xl lg:rounded-r-none ps-10 pe-10 lg:flex">
           <div className="title-column  items-center flex justify-center">
             <div className="inner-column hidden lg:block none">
               <div className="text-5xl  text-center font-bold text-slate-800 lg:text-start ">Count Every<br></br>Second Until<br></br>the Event</div>

@@ -5,7 +5,7 @@ function Sponsors() {
     <div>
         <div id='sponsors' className="flex flex-col items-center p-20 justify-center bg-gradient-to-r from-[#AE445A] to-[#451952]">
             <h1 className="lg:text-5xl text-3xl mt-4 font-bold text-center">Our Sponsors</h1>
-            <div  className="flex flex-wrap justify-center items-center gap-4 mt-4 text-[3vh] pb-10 opacity-50">
+            <div  className="flex flex-wrap justify-center items-center gap-4 mt-4 text-[3vh] pb-10 opacity-50 text-center">
                 To be announced soon....
             {/* <img
                 src="https://nitdgplug.org/static/images/Mukti-17-logo.png"

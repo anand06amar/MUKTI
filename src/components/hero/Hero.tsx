@@ -27,7 +27,8 @@ function Hero() {
         </div>
         <div className="flex flex-col text-center lg:text-left lg:flex-row lg:justify-between items-center mx-auto max-w-[80%] h-screen overflow-hidden">
           <Image src={"/images/mukti.svg"} alt="Mukti logo" width={600} height={600} className="hidden xl:block"/>
-          <Image src={"/images/mukti.svg"} alt="Mukti logo" width={300} height={300} className="xl:hidden mt-24 "/>
+          <Image src={"/images/mukti.svg"} alt="Mukti logo" width={200} height={200} className="xl:hidden mt-24"/>
+          {/* <Image src={"/images/mukti.svg"} alt="Mukti logo" width={300} height={300} className="xl:hidden md:block mt-24 "/> */}
           {/* <div className="bg-clip-text absolute top-60 right-10 lg:top-28 text-7xl lg:text-hero-font text-transparent drop-shadow-2xl tracking-widest font-bold bg-gradient-to-b from-white/40 to-white/10 opacity-70">
             MUKTI
           </div> */}

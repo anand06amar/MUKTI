@@ -17,12 +17,12 @@ export default function AboutUs() {
       </div>
       <div className="flex justify-center pt-7 text-center">
         <div className="w-[70%] lgz:w-[40%] font-bold mb-20">
-        The GNU/Linux Users&apos; Group of NIT Durgapur (NITDGP LUG) is a community of GNU/Linux users and promoters of Free and Open Source Software. The Group was established in 2003 by a bunch of FOSS enthusiasts with the objective of spreading awareness about the world of Free and Open Source Softwares and popularising their use in the campus. Since then the group has evolved into a body that is now an active part of the open source community through numerous contributions to a wide range of open source projects. The group strives hard to introduce the philosophy and encourage the use of FOSS across all departments of study, here at NIT Durgapur. We, the members, believe that Software freedom is as essential as the civil liberty of freedom of Speech.
+        The GNU/Linux Users&apos; Group of NIT Durgapur (NITDGP GLUG) is a community of GNU/Linux users and promoters of Free and Open Source Software. The Group was established in 2003 by a bunch of FOSS enthusiasts with the objective of spreading awareness about the world of Free and Open Source Softwares and popularising their use in the campus. Since then the group has evolved into a body that is now an active part of the open source community through numerous contributions to a wide range of open source projects. The group strives hard to introduce the philosophy and encourage the use of FOSS across all departments of study, here at NIT Durgapur. We, the members, believe that Software freedom is as essential as the civil liberty of freedom of Speech.
         </div>
       </div>
 
       <div className="lg:absolute md:absolute sm:mt-10 sm:p-8 bottom-0 w-full" id="about">
-        <h1 className="text-center font-bold text-4xl">Contact Us</h1>
+        <h1 className="text-center font-bold lg:text-5xl md:text-2xl text-2xl">Contact Us</h1>
         <div className="w-full flex justify-center gap-[4%] pt-6">
           <Link href="https://www.facebook.com/nitdgplug">
             <svg
@@ -56,6 +56,7 @@ export default function AboutUs() {
               width="24"
               height="24"
               viewBox="0 0 24 24"
+              className="hover:fill-pink-700"
             >
               <path
                 fill="white"
@@ -65,7 +66,7 @@ export default function AboutUs() {
           </Link>
         </div>
         <h4 className="text-center pt-5 pb-5 text-xl font-bold">
-          GNU/Linux Users&apos; Group
+        ©GNU/Linux Users&apos; Group
         </h4>
       </div>
     </div>

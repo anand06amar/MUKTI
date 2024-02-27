@@ -3,6 +3,7 @@
 import React, {useState} from "react";
 import TimelineItem from "./TimelineItem";
 import { CardHoverEffectDemo } from "./Card";
+import Image from "next/image";
 import "./index.css";
 import { HoverEffect } from "../ui/card-hover-effect";
 // Define the type for the description as an array of strings
@@ -18,7 +19,7 @@ interface TimelineItemData {
 
 const day2 = [
   {
-    title: "Joban DevOps workshop",
+    title: "DevOps Workshop by Joban Singh",
     time: "10:00am - 11:00am",
     venue: "To be released",
     description:
@@ -27,15 +28,15 @@ const day2 = [
   },
  
   {
-    title: "Tech mentorship",
+    title: "Tech Mentorship",
     time:  "2:00pm - 4:00pm",
     venue: "To be released",
     description:
-      "we're excited to introduce our Tech Mentorship event. Join us as we guide you through various tech stacks from scratch, helping you gain clarity and confidence in your understanding. Don't miss this opportunity to level up your skills and embark on your tech journey with us!",
+      "We're excited to introduce our Tech Mentorship event. Join us as we guide you through various tech stacks from scratch, helping you gain clarity and confidence in your understanding. Don't miss this opportunity to level up your skills and embark on your tech journey with us!",
     link: "#",
   },
   {
-    title: "Closing ceremony",
+    title: "Closing Ceremony",
     time: "4:00 pm to 4:30 pm",
     venue: "To be released",
     description:
@@ -54,16 +55,16 @@ const day1 = [
     link: "#",
   },
   {
-    title: "Abhas Abhinav speech",
-    time: "11AM - 12:00 PM",
+    title: "FOSS Talks by Abhas Abhinav",
+    time: "11:00AM - 12:00 PM",
     venue: "To be released",
     description:
-      "Join us for a workshop with Abhas Abhinav, founder & hacker-in-charge at DeepRoot GNU/Linux. Abash is a skilled entrepreneur specializing in free software and hardware. Don't miss this chance to gain valuable insights from his expertise!",
+      "Join us for a workshop with Abhas Abhinav, founder & hacker-in-charge at DeepRoot GNU/Linux. Abhas is a skilled entrepreneur specializing in free software and hardware. Don't miss this chance to gain valuable insights from his expertise!",
     link: "#",
   },
   
   {
-    title: "Abhas Abhinav",
+    title: "Hands On Session by Abhas Abhinav",
     time: "2:00PM - 4:00PM",
     venue: "To be released",
     description:
@@ -72,7 +73,7 @@ const day1 = [
   },
   
   {
-    title: "Tech mentorship",
+    title: "Tech Mentorship",
     time: "6:00PM - 8:00PM",
     venue: "To be released",
     description:
@@ -113,20 +114,22 @@ const Timeline: React.FC = () => {
   return (
     <div className="timeline">
       <div className="shedule-section">
+        
         <div className="auto-container">
           <div className="sec-title flex items-center justify-center">
             <h2 className="text-3xl lg:text-5xl font-bold text-white p-10">Schedule Plan</h2>
           </div>
+          <Image src="/images/Ellipse 26.png" alt="image" width="10000" height="10000" className="absolute"/>
 
-          <div className="shedule-tabs tabs-box p-10 mx-auto flex items-center justify-center">
+          <div className="shedule-tabs tabs-box p-10 mx-auto flex flex-col text-[#212639] lg:flex-row items-center justify-center rounded-lg">
             {/* <div className="btns-box">
                         <!--Tabs Box--> */}
-            <ul className="tab-buttons clearfix">
-              <li id="day-1" className={"tab-btn " + `${day === 1 ? "active-border":""}`} data-tab="#tab-2" onClick={() => setDay(1)}>
-                First Day <span>March 2, 2024</span>
+            <ul className="tab-buttons clearfix !text-[#212639] !font-extrabold ">
+              <li id="day-1" className={"tab-btn !text-[#212639] !font-black" + `${day === 1 ? "active-border !border-[5px] !font-black border-[#ae445a] !text-[#212639]":""}`} data-tab="#tab-2" onClick={() => setDay(1)}>
+                First Day <span className="!text-[#212639] !font-bold">March 2, 2024</span>
               </li>
-              <li id="day-2" className={"tab-btn " + `${day === 2 ? "active-border":""}`} data-tab="#tab-3" onClick={() => setDay(2)}>
-                Second Day <span>March 3, 2024</span>
+              <li id="day-2" className={"tab-btn !text-[#212639] !font-black" + `${day === 2 ? "active-border !border-[5px] !font-black border-[#f39f5a] !text-[#212639]":""}`} data-tab="#tab-3" onClick={() => setDay(2)}>
+                Second Day <span className="!text-[#212639] !font-bold">March 3, 2024</span>
               </li>
             </ul>
           </div>

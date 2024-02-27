@@ -26,7 +26,7 @@ export const HoverEffect = ({
   return (
     <div
       className={cn(
-        "grid grid-cols-1 gap-5 py-10 w-screen lg:-ml-[15%] md:-ml-[5%] sm:-ml-0",
+        "grid grid-cols-1 gap-5 py-10 w-screen xl:-ml-[15%] lg:mx-auto md:-ml-[5%] sm:-ml-0",
         className
       )}
     >
@@ -41,7 +41,7 @@ export const HoverEffect = ({
           <AnimatePresence>
             {hoveredIndex === idx && (
               <motion.span
-                className="absolute inset-0 h-full w-full bg-cyan-400 dark:bg-cyan-300/[0.8] block  rounded-3xl"
+                className="absolute inset-0 h-full w-full bg-cyan-400 dark:bg-[#f39f5a] block  rounded-3xl"
                 layoutId="hoverBackground"
                 initial={{ opacity: 0 }}
                 animate={{
@@ -85,7 +85,7 @@ export const Card = ({
   return (
     <div
       className={cn(
-        "rounded-2xl h-full w-full p-4 overflow-hidden bg-gray-900 border border-transparent dark:border-white/[0.2] group-hover:border-[#AE445A] relative z-20",
+        "rounded-2xl h-full w-full p-4 overflow-hidden bg-[#662549]/[0.8] backdrop-blur-2xl border border-transparent  relative z-20",
         className
       )}
     >
@@ -103,7 +103,7 @@ export const CardTitle = ({
   children: React.ReactNode;
 }) => {
   return (
-    <h4 className={cn("text-zinc-50 text-3xl font-bold tracking-wide mt-4", className)}>
+    <h4 className={cn("text-zinc-50 lg:text-3xl text-lg font-bold tracking-wide mt-4", className)}>
       {children}
     </h4>
   );

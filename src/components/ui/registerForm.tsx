@@ -79,7 +79,7 @@ export function DialogDemo() {
         <DialogTrigger asChild>
           <Button
             borderRadius="2.25rem"
-            className=" dark:bg-slate-900 dark:text-white border-neutral-200 dark:border-slate-800 z-40"
+            className=" dark:bg-slate-900 dark:text-white !font-semibold border-neutral-200 dark:border-slate-800 z-40"
           >
             Register Yourself
           </Button>

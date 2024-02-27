@@ -19,7 +19,7 @@ export default function Home() {
       <NavbarFloat />
       <Hero />
       <Counter />
-      <div className="flex justify-center text-3xl font-bold font-lalezar">Our Speakers</div>
+      <div className="flex relative justify-center text-3xl lg:text-5xl font-bold font-lalezar z-40">Our Speakers</div>
       <div className="flex flex-col lg:flex-row justify-center gap-y-16">
         <Card />
         <Card2 />

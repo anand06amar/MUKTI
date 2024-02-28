@@ -50,6 +50,7 @@ export function ComboboxDemo2({year}:{year:React.Dispatch<React.SetStateAction<s
           {value
             ? tech.find((tech) => tech.value === value)?.label
             : "Select tech..."}
+            {value}
           <CaretSortIcon className="ml-2 h-4 w-4 shrink-0 opacity-50" />
         </Button>
       </PopoverTrigger>
@@ -69,6 +70,8 @@ export function ComboboxDemo2({year}:{year:React.Dispatch<React.SetStateAction<s
                 }}
               >
                 {tech.label}
+                {/* console.log({value}); */}
+                
                 <CheckIcon
                   className={cn(
                     "ml-auto h-4 w-4",

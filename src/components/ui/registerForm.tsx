@@ -156,7 +156,7 @@ export function DialogDemo() {
               <ComboboxDemo year={setYear} />
               {/* <Input id="year" value="1" className="col-span-3 bg-slate-900" /> */}
             </div>
-            <div className="font-bold flex justify-center">
+            {/* <div className="font-bold flex justify-center">
               If you want to join in Tech Mentorship fill the below field
             </div>
             <div className="grid grid-cols-4 items-center gap-4">
@@ -164,8 +164,8 @@ export function DialogDemo() {
                 Tech
               </Label>
               <ComboboxDemo2 year={setTech} />
-              {/* <Input id="year" value="1" className="col-span-3 bg-slate-900" /> */}
-            </div>
+              <Input id="year" value="1" className="col-span-3 bg-slate-900" />
+            </div> */}
           </div>
 
           <DialogFooter>

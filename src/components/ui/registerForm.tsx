@@ -16,6 +16,7 @@ import { useState } from "react";
 import { getFirestore, doc, setDoc } from "firebase/firestore";
 import app from "@/firebase/config";
 import { Alert, Snackbar } from "@mui/material";
+import { ComboboxDemo2 } from "./combo-box2";
 
 const db = getFirestore(app);
 
@@ -25,6 +26,7 @@ export function DialogDemo() {
   const [mobile, setMobile] = useState("");
   const [roll, setRoll] = useState("");
   const [year, setYear] = useState("1");
+  const [tech, setTech] = useState("HTML")
   const [institute, setInstitute] = useState("");
   const [error, setError] = useState(false);
   const [success, setSuccess] = useState(false);
@@ -35,6 +37,7 @@ export function DialogDemo() {
       name !== "" &&
       email !== "" &&
       roll !== "" &&
+      tech !== "" &&
       institute !== "" &&
       year !== ""
     ) {
@@ -43,6 +46,7 @@ export function DialogDemo() {
         email: email,
         mobile: mobile,
         year: year,
+        tech: tech,
         roll:roll,
         institute: institute,
       })
@@ -150,6 +154,13 @@ export function DialogDemo() {
                 Year
               </Label>
               <ComboboxDemo year={setYear} />
+            </div>
+            <div className="grid grid-cols-4 items-center gap-4">
+              <Label htmlFor="tech" className="text-right">
+                Tech
+              </Label>
+              <ComboboxDemo2 year={setTech} />
+              {/* <Input id="year" value="1" className="col-span-3 bg-slate-900" /> */}
             </div>
           </div>
 

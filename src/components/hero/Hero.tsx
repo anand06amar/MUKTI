@@ -11,12 +11,12 @@ function Hero() {
         gradientBackgroundStart="#000000"
         gradientBackgroundEnd="#000000"
         pointerColor="white"
-        firstColor="174, 68, 90"
-        secondColor="69, 25, 82"
-        thirdColor="69, 25, 82"
-        fourthColor="174, 68, 90"
-        fifthColor="174, 68, 90"
-      >
+        firstColor="64, 158, 255"   
+        secondColor="0, 44, 143"    
+        thirdColor="0, 44, 143"     
+        fourthColor="64, 158, 255"  
+        fifthColor="64, 158, 255"   
+              >
         <div className="absolute top-0 left-0 w-full h-full">
           <Image
             src="/images/Ellipse5.png"

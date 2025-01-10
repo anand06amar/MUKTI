@@ -1,77 +1,85 @@
 import Link from "next/link";
-import Image from "next/image";
-import { LampDemo } from "../test";
 
 export default function AboutUs() {
   return (
     <div
-      style={{ backgroundColor: "#F39F5A", minHeight: "75vh", width: "100%" }}
+      style={{
+        background: "linear-gradient(to right, #4B8CFF, #5A4BE3)",
+        minHeight: "75vh",
+        width: "100%",
+      }}
       className="relative"
     >
       <div className="flex justify-end">
-        <div className=" mx-auto pt-[4rem]">
-          <h1 className="text-4xl lg:text-5xl font-bold text-center md:text-2xl">About Us</h1>
-          {/* <Image src="/images/path939.png" alt="logo" height={24} width={24} /> */}
-          <h2 className="text-xl font-bold pt-4 lg:pt-12">
+        <div className="mx-auto pt-[4rem]">
+          <h1 className="text-4xl lg:text-5xl font-bold text-center md:text-2xl text-white drop-shadow-lg">
+            About Us
+          </h1>
+          <h2 className="text-xl font-bold pt-4 lg:pt-12 text-gray-200 drop-shadow-sm">
             GNU/Linux Users&apos; Group
           </h2>
         </div>
       </div>
       <div className="flex justify-center pt-7 text-center">
-        <div className="w-[70%] lgz:w-[40%]  mb-20">
-        The GNU/Linux Users&apos; Group of NIT Durgapur (NITDGP GLUG) is a community of GNU/Linux users and promoters of Free and Open Source Software. The Group was established in 2003 by a bunch of FOSS enthusiasts with the objective of spreading awareness about the world of Free and Open Source Softwares and popularising their use in the campus. Since then the group has evolved into a body that is now an active part of the open source community through numerous contributions to a wide range of open source projects. The group strives hard to introduce the philosophy and encourage the use of FOSS across all departments of study, here at NIT Durgapur. We, the members, believe that Software freedom is as essential as the civil liberty of freedom of Speech.
+        <div className="w-[70%] lgz:w-[40%] mb-20 text-gray-300 text-lg leading-relaxed">
+          The GNU/Linux Users&apos; Group of NIT Durgapur (NITDGP GLUG) is a
+          community of GNU/Linux users and promoters of Free and Open Source
+          Software. The Group was established in 2003 by a bunch of FOSS
+          enthusiasts with the objective of spreading awareness about the world
+          of Free and Open Source Software and popularising their use in the
+          campus. Since then the group has evolved into a body that is now an
+          active part of the open source community through numerous
+          contributions to a wide range of open source projects. The group
+          strives hard to introduce the philosophy and encourage the use of
+          FOSS across all departments of study, here at NIT Durgapur. We, the
+          members, believe that Software freedom is as essential as the civil
+          liberty of freedom of Speech.
         </div>
       </div>
 
-      <div className=" sm:mt-10 sm:p-8 bottom-0 w-full" id="about">
-        <h1 className="text-center font-bold lg:text-5xl md:text-2xl text-2xl">Contact Us</h1>
+      <div className="sm:mt-10 sm:p-8 bottom-0 w-full" id="about">
+        <h1 className="text-center font-bold lg:text-5xl md:text-2xl text-2xl text-white drop-shadow-lg">
+          Contact Us
+        </h1>
         <div className="w-full flex justify-center gap-[4%] pt-6">
           <Link href="https://www.facebook.com/nitdgplug">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
+              width="36"
+              height="36"
               viewBox="0 0 24 24"
+              className="fill-white hover:fill-indigo-400 transition duration-300"
             >
-              <path
-                fill="white"
-                d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3 8h-1.35c-.538 0-.65.221-.65.778v1.222h2l-.209 2h-1.791v7h-3v-7h-2v-2h2v-2.308c0-1.769.931-2.692 3.029-2.692h1.971v3z"
-              />
+              <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3 8h-1.35c-.538 0-.65.221-.65.778v1.222h2l-.209 2h-1.791v7h-3v-7h-2v-2h2v-2.308c0-1.769.931-2.692 3.029-2.692h1.971v3z" />
             </svg>
           </Link>
           <Link href="https://www.instagram.com/nitdgplug/">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
+              width="36"
+              height="36"
               viewBox="0 0 24 24"
+              className="fill-white hover:fill-pink-500 transition duration-300"
             >
-              <path
-                fill="white"
-                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
-              />
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
             </svg>
           </Link>
           <Link href="https://www.linkedin.com/company/lugnitdgp/mycompany/">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
+              width="36"
+              height="36"
               viewBox="0 0 24 24"
-              className="hover:fill-pink-700"
+              className="fill-white hover:fill-blue-400 transition duration-300"
             >
-              <path
-                fill="white"
-                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
-              />
+              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
             </svg>
           </Link>
         </div>
-        <div className=" flex justify-center gap-[4%] pt-6">
-        
-        <h4 className="text-center pt-5 pb-5 text-xl font-bold">
-        ©GNU/Linux Users&apos; Group
-        </h4>
+        <div className="flex justify-center gap-[4%] pt-6">
+          <h4 className="text-center pt-5 pb-5 text-xl font-bold text-gray-300 drop-shadow-md">
+            ©GNU/Linux Users&apos; Group
+          </h4>
         </div>
       </div>
     </div>

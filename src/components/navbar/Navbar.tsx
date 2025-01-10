@@ -1,33 +1,68 @@
 "use client";
-import Image from "next/image";
+
 import React, { useState } from "react";
-import { HoveredLink, Menu, MenuItem, ProductItem } from "../ui/navbar-menu";
-import { cn } from "@/utils/cn";
 import Link from "next/link";
+import { motion } from "framer-motion";
+import { cn } from "@/utils/cn";
 
 export function NavbarFloat() {
   return (
     <div className="relative w-full flex items-center justify-center">
-      <Navbar className="top-2" />
+      <Navbar className="top-4" />
     </div>
   );
 }
 
 function Navbar({ className }: { className?: string }) {
-  const [active, setActive] = useState<string | null>(null);
+  const [hovered, setHovered] = useState<string | null>(null);
+
   return (
-    <div>
-      
-    <div
-      className={cn("fixed top-10 inset-x-0 w-[90%] lg:max-w-xl mx-auto z-50", className)}
+    <nav
+      className={cn(
+        "fixed inset-x-0 max-w-2xl mx-auto z-50 py-4 px-4",
+        "bg-white/10 backdrop-blur-md rounded-full",
+        "border border-white/20 shadow-lg",
+        className
+      )}
     >
-      {/* <Image src="/images/path939.png" alt="logo" height={24} width={24} /> */}
-      <Menu setActive={setActive}>
-        <Link href="#speakers" className="hover:text-[#f39f5a]" >Speakers</Link>
-        <Link href="#sponsors" className="hover:text-[#f39f5a]">Sponsors</Link>
-        <Link href="#about" className="hover:text-[#f39f5a]">About Us</Link>
-      </Menu>
-    </div>
-    </div>
+      <ul className="flex justify-center items-center space-x-8">
+        <NavItem href="#speakers" label="Speakers" hovered={hovered} setHovered={setHovered} />
+        <NavItem href="#sponsors" label="Sponsors" hovered={hovered} setHovered={setHovered} />
+        <NavItem href="#about" label="About Us" hovered={hovered} setHovered={setHovered} />
+      </ul>
+    </nav>
   );
 }
+
+interface NavItemProps {
+  href: string;
+  label: string;
+  hovered: string | null;
+  setHovered: (value: string | null) => void;
+}
+
+function NavItem({ href, label, hovered, setHovered }: NavItemProps) {
+  return (
+    <motion.li
+      onHoverStart={() => setHovered(label)}
+      onHoverEnd={() => setHovered(null)}
+      className="relative"
+    >
+      <Link href={href} className="text-white font-medium text-lg">
+        {label}
+      </Link>
+      {hovered === label && (
+        <motion.div
+          layoutId="navbar-hover"
+          className="absolute inset-0 -z-10 rounded-md bg-white/20"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+        />
+      )}
+    </motion.li>
+  );
+}
+
+export default Navbar;
+

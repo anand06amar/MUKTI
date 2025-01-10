@@ -1,35 +1,41 @@
-"use client"
+"use client";
 
 import React, { useState, useEffect, useRef } from "react";
+import { motion } from "framer-motion";
 
 export default function Counter() {
-  const [days, SetDays] = useState('00');
-  const [hours, SetHours] = useState('00');
-  const [minutes, SetMinutes] = useState('00');
-  const [seconds, SetSeconds] = useState('00');
+  const [days, setDays] = useState<string>('00');
+  const [hours, setHours] = useState<string>('00');
+  const [minutes, setMinutes] = useState<string>('00');
+  const [seconds, setSeconds] = useState<string>('00');
 
-  const interval = useRef<ReturnType<typeof setInterval> | undefined>();
+  const interval = useRef<ReturnType<typeof setInterval>>();
+
+  const formatNumber = (num: number): string => (num < 10 ? `0${num}` : `${num}`);
 
   const startTimer = () => {
-    const countdownDate = new Date('2024-03-02T00:00:00').getTime();
+    const countdownDate: number = new Date('2025-01-17T00:00:00').getTime();
 
     interval.current = setInterval(() => {
-      const now = new Date().getTime();
+      const now: number = new Date().getTime();
+      const difference: number = countdownDate - now;
 
-      const difference = countdownDate - now;
-      const d = Math.floor(difference / (1000 * 60 * 60 * 24));
-      const h = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const m = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
-      const s = Math.floor((difference % (1000 * 60)) / 1000);
-      // console.log(d, h, m, s, difference);
-      if (d < 0 && h < 0 && m < 0 && s < 0) {
+      if (difference <= 0) {
         clearInterval(interval.current);
-      }
-      else {
-        SetDays(d < 10 ? `0${d}` : `${d}`);
-        SetHours(h < 10 ? `0${h}` : `${h}`);
-        SetMinutes(m < 10 ? `0${m}` : `${m}`);
-        SetSeconds(s < 10 ? `0${s}` : `${s}`);
+        setDays('00');
+        setHours('00');
+        setMinutes('00');
+        setSeconds('00');
+      } else {
+        const d: number = Math.floor(difference / (1000 * 60 * 60 * 24));
+        const h: number = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const m: number = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+        const s: number = Math.floor((difference % (1000 * 60)) / 1000);
+
+        setDays(formatNumber(d));
+        setHours(formatNumber(h));
+        setMinutes(formatNumber(m));
+        setSeconds(formatNumber(s));
       }
     }, 1000);
   };
@@ -37,52 +43,55 @@ export default function Counter() {
   useEffect(() => {
     startTimer();
     return () => {
-      clearInterval(interval.current);
+      if (interval.current) {
+        clearInterval(interval.current);
+      }
     };
-  });
+  }, []);
 
   return (
-    <section className="coming-soon-section w-[100%]">
-      <div className="flex flex-row auto-container justify-center lg:justify-end relative -top-20">
-        <div className="w-[80%] lg:w-[70%] bg-[#F39F5A] text-black font-bold rounded-xl lg:rounded-l-xl lg:rounded-r-none ps-10 pe-10 lg:flex">
-          <div className="title-column  items-center flex justify-center">
-            <div className="inner-column hidden lg:block none">
-              <div className="text-5xl  text-center font-bold text-slate-800 lg:text-start ">Count Every<br></br>Second Until<br></br>the Event</div>
-            </div>
-            <div className="inner-column pt-10 lg:hidden">
-              <div className="text-xl text-center font-bold text-slate-800 lg:text-start ">Count Every Second Until the Event</div>
-            </div>
-          </div>
-          <div className="divider lg:flex lg:flex-col hidden ps-16 ">
-            <div className="inner-column">
-              <div className="text-center text-xl lg:text-2xl font-bold pt-2 text-slate-800 mt-8">|</div>
-            </div>
-            <div className="inner-column">
-              <div className="text-center text-xl lg:text-2xl font-bold pt-2 text-slate-800 mt-2">|</div>
-            </div>
-            <div className="inner-column">
-              <div className="text-center text-xl l lg:text-2xl font-bold pt-2 text-slate-800 mt-2">|</div>
-            </div>
-          </div>
-          <div className="timer-column">
-            <div className="inner-column">
-              <div className="time-counter">
-                <div className="time-countdown clearfix flex flex-wrap md:ml-20 gap-10 m-2 pb-10 pt-10  justify-center lg:justify-end ">
-                  <div className="counter-column flex flex-col gap-4 font-semibold justify-center items-center text-[#212639] text-lg"><span className="count font-bold text-slate-800 text-2xl  lg:text-7xl ">{days} </span>Days</div>
-                  <div className="text-[#212639] lg:block hidden text-4xl mt-1">:</div>
-                  <div className="counter-column flex flex-col gap-4 font-semibold justify-center items-center text-[#212639] text-lg"><span className="count font-bold text-slate-800 text-2xl lg:text-7xl ">{hours} </span>Hours</div>
-                  <div className="text-[#212639] lg:block text-4xl mt-1 hidden sm:block">:</div>
-
-
-                  <div className="counter-column flex flex-col gap-4 font-semibold justify-center items-center text-[#212639] text-lg"><span className="count font-bold text-slate-800 text-2xl lg:text-7xl ">{minutes} </span>Minutes</div>
-                  <div className="text-[#212639] lg:block hidden text-4xl mt-1">:</div>
-                  <div className="counter-column flex flex-col gap-4 font-semibold justify-center items-center text-[#212639] text-lg"><span className="count font-bold text-slate-800 text-2xl lg:text-7xl ">{seconds} </span>Seconds</div>
-                </div>
+    <section className="coming-soon-section w-full py-20">
+      <div className="container mx-auto px-4">
+        <motion.div 
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="bg-gradient-to-r from-purple-900 via-indigo-900 to-blue-900 rounded-3xl shadow-2xl overflow-hidden"
+        >
+          <div className="bg-black bg-opacity-50 backdrop-filter backdrop-blur-lg p-8 lg:p-12">
+            <div className="grid lg:grid-cols-2 gap-8 items-center">
+              <div className="text-center lg:text-left">
+                <h2 className="text-4xl lg:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-500 mb-4">
+                  Countdown to the Future
+                </h2>
+                <p className="text-xl text-cyan-300">
+                  Join us for an unforgettable Mukti experience!
+                </p>
+              </div>
+              <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 text-center">
+                {[
+                  { label: 'Days', value: days },
+                  { label: 'Hours', value: hours },
+                  { label: 'Minutes', value: minutes },
+                  { label: 'Seconds', value: seconds },
+                ].map((item) => (
+                  <div key={item.label} className="bg-gradient-to-b from-purple-800 to-indigo-900 rounded-lg p-4 shadow-lg border border-purple-500">
+                    <motion.div 
+                      className="text-5xl lg:text-7xl font-bold text-pink-500 mb-2"
+                      // animate={{ scale: [1, 1.1, 1] }}
+                      transition={{ duration: 1, repeat: Infinity }}
+                    >
+                      {item.value}
+                    </motion.div>
+                    <div className="text-sm lg:text-base font-medium text-cyan-300">{item.label}</div>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
 }
+

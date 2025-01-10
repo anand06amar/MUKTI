@@ -4,8 +4,8 @@ export default function AboutUs() {
   return (
     <div
       style={{
-        background: "linear-gradient(to right, #4B8CFF, #5A4BE3)",
-        minHeight: "75vh",
+        background: "linear-gradient(90deg, rgba(23,72,133,1) 23%, rgba(103,12,175,1) 53%, rgba(9,9,121,1) 84%)",
+                minHeight: "75vh",
         width: "100%",
       }}
       className="relative"

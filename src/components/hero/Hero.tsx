@@ -19,7 +19,7 @@ function Hero() {
               >
         <div className="absolute top-0 left-0 w-full h-full">
           <Image
-            src="/images/Ellipse5.png"
+            src="/images/blue.png"
             alt="."
             layout="fill"
             objectFit="cover"

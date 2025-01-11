@@ -8,50 +8,96 @@ import CyberpunkCard from "./CyberPunkCard";
 const day1 = [
   {
     title: "Opening Ceremony",
-    time: "10:00 AM - 11:00 AM",
+    time: "06:00 PM - 06:30 PM",
     venue: "To be released",
-    description: "Join us as we unveil the exciting world of FOSS at the opening ceremony of MUKTI.",
+    description: "MUKTI 2.0 Opening Ceremony + Opening Speech by Convenor",
   },
   {
-    title: "FOSS Talks by Abhas Abhinav",
-    time: "11:00AM - 12:00 PM",
+    title: "FOSS Talk",
+    time: "06:30 PM - 07:30 PM",
     venue: "To be released",
-    description: "Join us for a workshop with Abhas Abhinav, founder & hacker-in-charge at DeepRoot GNU/Linux. Abhas is a skilled entrepreneur specializing in free software and hardware. Don't miss this chance to gain valuable insights from his expertise!",
+    description: "Unlocking the Future with Ali Solanki on Open Source, Modern Blockchain, and the Path Ahead!",
   },
   {
-    title: "Hands On Session by Abhas Abhinav",
-    time: "2:00PM - 4:00PM",
+    title: "Podcast Session",
+    time: "07:30 PM - 08:00 PM",
     venue: "To be released",
-    description: "Join us for a workshop with Abhas Abhinav, founder & hacker-in-charge at DeepRoot GNU/Linux. Abash is a skilled entrepreneur specializing in free software and hardware. Don't miss this chance to gain valuable insights from his expertise!",
-  },
-  {
-    title: "Tech Mentorship",
-    time: "6:00PM - 8:00PM",
-    venue: "To be released",
-    description: "Welcome back to our Tech Mentorship event! Dive back in as we continue guiding you through various tech stacks from scratch. Don't miss this chance to level up your skills and embark on your tech journey with us!",
+    description: "QnA + Podcast with Ali Solanki",
   },
 ];
 
 const day2 = [
   {
-    title: "DevOps Workshop by Joban Singh",
-    time: "10:00am - 11:00am",
+    title: "Hackathon Briefings",
+    time: "08:00 AM - 08:30 AM",
     venue: "To be released",
-    description: "Join us for a workshop with Joban Singh, a Microsoft developer specializing in cutting-edge web technologies. Don't miss this opportunity to learn from his expertise!",
+    description: " Reporting at the Hackathon Venue by Teams + Hackathon Briefings",
   },
   {
-    title: "Tech Mentorship",
-    time: "2:00pm - 4:00pm",
+    title: "Hackathon Begins",
+    time: "08:00 AM",
     venue: "To be released",
-    description: "We're excited to introduce our Tech Mentorship event. Join us as we guide you through various tech stacks from scratch, helping you gain clarity and confidence in your understanding. Don't miss this opportunity to level up your skills and embark on your tech journey with us!",
+    description: "The hackathon kicks off with participants diving into innovative problem-solving and creative project development. Let the brainstorming begin!",
   },
   {
-    title: "Closing Ceremony",
-    time: "4:00 pm to 4:30 pm",
+    title: "Lunch",
+    time: "12:30 PM",
     venue: "To be released",
-    description: "Join us as we conclude our exploration of the exciting world of FOSS at the closing ceremony of MUKTI.",
+    description: "Take a break and refuel with a delicious lunch. Enjoy some time to relax and recharge for the next sessions!",
+  },
+  {
+    title: "Hackathon Ends",
+    time: "08:30 PM",
+    venue: "To be released",
+    description: "The hackathon concludes as participants wrap up their projects and prepare for presentations",
   },
 ];
+
+const day3 = [
+  {
+    title: "Thanksgiving",
+    time: "09:00 AM - 09:30 AM",
+    venue: "To be released",
+    description: "Thanksgiving to all the Teams for participating in Showdownn at MUKTI 2.0",
+  },
+  {
+    title: "Director/Faculty Advisor speech",
+    time: "09:30 AM - 10:30 AM",
+    venue: "To be released",
+    description: "The Director/Faculty Advisor shares insights and words of encouragement to inspire participants.",
+  },
+  {
+    title: "FOSS Talk",
+    time: "10:30 AM - 11:30 AM",
+    venue: "To be released",
+    description: "Shaping the Future with Riti Kumari on Career Opportunities for Engineers and the Transformative Impact of AI!",
+  },
+  {
+    title: "Podcast Session",
+    time: "11:30 AM - 12:00 PM",
+    venue: "To be released",
+    description: "QnA + Podcast with Riti Kumari",
+  },
+  {
+    title: "MuC Performance",
+    time: "12:00 AM - 12:30 PM",
+    venue: "To be released",
+    description: "Enjoy a live performance by MuC, the music club of NIT Durgapur, showcasing talented artists and vibrant melodies.",
+  },
+  {
+    title: "Results & Prize Distribution",
+    time: "12:30 AM - 01:00 PM",
+    venue: "To be released",
+    description: "Results Announcement with Prize Distribution",
+  },
+  {
+    title: "MUKTI 2.0 Closing Address",
+    time: "12:00 AM - 12:30 PM",
+    venue: "To be released",
+    description: "Closing of MUKTI 2.0 by President/Convenor",
+  },
+
+]
 
 const Timeline: React.FC = () => {
   const [activeDay, setActiveDay] = useState(1);
@@ -61,7 +107,7 @@ const Timeline: React.FC = () => {
       <div className="absolute inset-0 bg-[url('/images/circuit-board.svg')] opacity-10"></div>
       <Image src="/images/Ellipse 26.png" alt="background" layout="fill" objectFit="cover" className="opacity-30" />
       <div className="container mx-auto relative z-10">
-        <motion.h2 
+        <motion.h2
           className="text-4xl md:text-6xl font-bold text-center mb-12 text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500"
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
@@ -71,20 +117,19 @@ const Timeline: React.FC = () => {
         </motion.h2>
 
         <div className="flex justify-center mb-12">
-          <motion.div 
+          <motion.div
             className="bg-black bg-opacity-50 backdrop-blur-md rounded-full p-2 flex space-x-4 border border-cyan-500"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
           >
-            {[1, 2].map((day) => (
+            {[1, 2, 3].map((day) => (
               <motion.button
                 key={day}
-                className={`px-4 md:px-6 py-2 md:py-3 rounded-full text-base md:text-lg font-semibold transition-all duration-300 ${
-                  activeDay === day
+                className={`px-4 md:px-6 py-2 md:py-3 rounded-full text-base md:text-lg font-semibold transition-all duration-300 ${activeDay === day
                     ? "bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 text-black"
                     : "bg-transparent text-cyan-400 hover:bg-purple-800"
-                }`}
+                  }`}
                 onClick={() => setActiveDay(day)}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
@@ -104,7 +149,7 @@ const Timeline: React.FC = () => {
             transition={{ duration: 0.5 }}
             className="grid grid-cols-1 md:grid-cols-2 gap-6"
           >
-            {(activeDay === 1 ? day1 : day2).map((item, index) => (
+            {(activeDay === 1 ? day1 : activeDay == 2 ? day2 : day3).map((item, index) => (
               <CyberpunkCard key={index} {...item} />
             ))}
           </motion.div>

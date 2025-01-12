@@ -80,19 +80,19 @@ const day3 = [
   },
   {
     title: "MuC Performance",
-    time: "12:00 AM - 12:30 PM",
+    time: "12:00 PM - 12:30 PM",
     venue: "To be released",
     description: "Enjoy a live performance by MuC, the music club of NIT Durgapur, showcasing talented artists and vibrant melodies.",
   },
   {
     title: "Results & Prize Distribution",
-    time: "12:30 AM - 01:00 PM",
+    time: "12:30 PM - 01:00 PM",
     venue: "To be released",
     description: "Results Announcement with Prize Distribution",
   },
   {
     title: "MUKTI 2.0 Closing Address",
-    time: "12:00 AM - 12:30 PM",
+    time: "12:00 PM - 12:30 PM",
     venue: "To be released",
     description: "Closing of MUKTI 2.0 by President/Convenor",
   },

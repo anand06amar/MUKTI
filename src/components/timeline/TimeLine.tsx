@@ -35,7 +35,7 @@ const day2 = [
   },
   {
     title: "Hackathon Begins",
-    time: "08:00 AM",
+    time: "08:30 AM",
     venue: "To be released",
     description: "The hackathon kicks off with participants diving into innovative problem-solving and creative project development. Let the brainstorming begin!",
   },
@@ -86,13 +86,13 @@ const day3 = [
   },
   {
     title: "Results & Prize Distribution",
-    time: "12:30 PM - 01:00 PM",
+    time: "12:30 PM - 01:30 PM",
     venue: "To be released",
     description: "Results Announcement with Prize Distribution",
   },
   {
     title: "MUKTI 2.0 Closing Address",
-    time: "12:00 PM - 12:30 PM",
+    time: "01.00 PM - 01:30 PM",
     venue: "To be released",
     description: "Closing of MUKTI 2.0 by President/Convenor",
   },

@@ -14,9 +14,9 @@ export function Card() {
       id="speakers"
       className="cardHolder  mx-auto lg:mx-20 h-[400px] w-[320px]"
     >
-      <div className="relative rounded-lg mx-auto speakerCard mt-10 flex flex-row border-[3px] border-[#ae445a] h-[350px] w-[300px] ">
+      <div className="relative rounded-lg mx-auto speakerCard mt-10 flex flex-row border-[3px] border-[#233287] h-[350px] w-[300px] ">
         <Image
-          src="/images/abhas abhinav.png"
+          src="/images/ali.png"
           height="1000"
           width="1000"
           className=" h-[344px] w-[250px] object-cover mb-[53px] pb-30 group-hover/card:shadow-xl"
@@ -33,16 +33,16 @@ export function Card() {
           {/* <Link href={`/`}>
           <InstagramIcon style={{ color: "#ae445a" }}  />
         </Link> */}
-        <Link href={`https://www.linkedin.com/in/abhas-abhinav/`}>
-          <LinkedInIcon style={{ color: "#ae445a" }} />
+        <Link href={`https://www.linkedin.com/in/alisolanki/`}>
+          <LinkedInIcon style={{ color: "#233287" }} />
         </Link>
-        <Link href={`https://twitter.com/abhasabhinav`} passHref>
-          <XIcon style={{ color: "#ae445a" }} />
+        <Link href={`https://x.com/alisolankii`} passHref>
+          <XIcon style={{ color: "#233287" }} />
         </Link>
         </div>
       </div>
-      <div className="text-[#ae445a] text-2xl pt-2 pl-2 pr-2 flex items-center justify-center font-bold z-10">Abhas Abhinav</div>
-      <div className="text-[#e8bcb9] p-1 flex items-center justify-center text-center font-bold opacity-80 z-10">Founder & Hacker-in-charge of DeepRoot GNU/Linux</div>
+      <div className="text-[#445dae] text-2xl pt-2 pl-2 pr-2 flex items-center justify-center font-bold z-10">Ali Solanki</div>
+      <div className="text-[#b9c2e8] p-1 flex items-center justify-center text-center font-bold opacity-80 z-10">Blockchain developer skilled in building decentralized applications and smart contracts using Solidity on Ethereum and other Web3 platforms.</div>
     </div>
   );
 }

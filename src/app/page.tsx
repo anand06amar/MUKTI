@@ -14,11 +14,13 @@ import { Card2 } from "@/components/speakers/Card2";
 import Timeline from "@/components/timeline/TimeLine";
 import ComingSoon from "@/components/ComingSoon/ComingSoon";
 import Showdown from '@/components/showdown/Showdown'
+import Header from '@/components/header/Header'
 
 
 export default function Home() {
   return (
     <div className="overflow-x-hidden">
+      <Header />
       <NavbarFloat />
       <Hero />
       <Counter />

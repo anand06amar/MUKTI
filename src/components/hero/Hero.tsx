@@ -7,7 +7,7 @@ import { DialogDemo } from "../ui/registerForm";
 function Hero() {
   return (
     <>
-      <BackgroundGradientAnimation
+      {/* <BackgroundGradientAnimation
         gradientBackgroundStart="#000000"
         gradientBackgroundEnd="#000000"
         pointerColor="white"
@@ -15,8 +15,9 @@ function Hero() {
         secondColor="0, 44, 143"    
         thirdColor="0, 44, 143"     
         fourthColor="64, 158, 255"  
-        fifthColor="64, 158, 255"   
-              >
+        fifthColor="64, 158, 255"
+        className="-z-10"   
+              > */}
         <div className="absolute top-0 left-0 w-full h-full">
           <Image
             src="/images/blue.png"
@@ -49,7 +50,7 @@ function Hero() {
           <DialogDemo/>
           </div>
         </div>
-      </BackgroundGradientAnimation>
+      {/* </BackgroundGradientAnimation> */}
     </>
   );
 }

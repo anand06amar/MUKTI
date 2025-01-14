@@ -13,6 +13,7 @@ import { Card } from "@/components/speakers/Card";
 import { Card2 } from "@/components/speakers/Card2";
 import Timeline from "@/components/timeline/TimeLine";
 import ComingSoon from "@/components/ComingSoon/ComingSoon";
+import Showdown from '@/components/showdown/Showdown'
 
 
 export default function Home() {
@@ -21,6 +22,7 @@ export default function Home() {
       <NavbarFloat />
       <Hero />
       <Counter />
+      <Showdown />
       <div className="flex relative justify-center text-3xl lg:text-5xl font-bold font-lalezar z-40 my-16">
         Our Speakers
       </div>

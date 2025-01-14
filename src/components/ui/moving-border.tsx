@@ -18,6 +18,7 @@ export function Button({
   borderclassName,
   duration,
   className,
+  borderColor,
   ...otherProps
 }: {
   borderRadius?: string;
@@ -27,6 +28,7 @@ export function Button({
   borderclassName?: string;
   duration?: number;
   className?: string;
+  borderColor?: string;
   [key: string]: any;
 }) {
   return (
@@ -47,7 +49,7 @@ export function Button({
         <MovingBorder duration={duration} rx="30%" ry="30%">
           <div
             className={cn(
-              "h-20 w-20 opacity-[0.8] bg-[radial-gradient(var(--pink-600)_40%,transparent_60%)]",
+              `h-20 w-20 opacity-[0.8] bg-[radial-gradient(var(--${borderColor})_40%,transparent_60%)]`,
               borderclassName
             )}
           />

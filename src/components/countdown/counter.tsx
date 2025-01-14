@@ -56,15 +56,15 @@ export default function Counter() {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="bg-gradient-to-r from-purple-900 via-indigo-900 to-blue-900 rounded-3xl shadow-2xl overflow-hidden"
+          className="bg-gradient-to-r from-blue-900 via-blue-800 to-black rounded-3xl shadow-2xl overflow-hidden"
         >
           <div className="bg-black bg-opacity-50 backdrop-filter backdrop-blur-lg p-8 lg:p-12">
             <div className="grid lg:grid-cols-2 gap-8 items-center">
               <div className="text-center lg:text-left">
-                <h2 className="text-4xl lg:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-500 mb-4">
+                <h2 className="text-4xl lg:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600 mb-4">
                   Countdown to the Future
                 </h2>
-                <p className="text-xl text-cyan-300">
+                <p className="text-xl text-blue-300">
                   Join us for an unforgettable Mukti experience!
                 </p>
               </div>
@@ -75,15 +75,14 @@ export default function Counter() {
                   { label: 'Minutes', value: minutes },
                   { label: 'Seconds', value: seconds },
                 ].map((item) => (
-                  <div key={item.label} className="bg-gradient-to-b from-purple-800 to-indigo-900 rounded-lg p-4 shadow-lg border border-purple-500">
+                  <div key={item.label} className="bg-gradient-to-b from-blue-800 to-black rounded-lg p-4 shadow-lg border border-blue-500">
                     <motion.div 
-                      className="text-5xl lg:text-7xl font-bold text-pink-500 mb-2"
-                      // animate={{ scale: [1, 1.1, 1] }}
+                      className="text-5xl lg:text-7xl font-bold text-blue-400 mb-2"
                       transition={{ duration: 1, repeat: Infinity }}
                     >
                       {item.value}
                     </motion.div>
-                    <div className="text-sm lg:text-base font-medium text-cyan-300">{item.label}</div>
+                    <div className="text-sm lg:text-base font-medium text-blue-300">{item.label}</div>
                   </div>
                 ))}
               </div>

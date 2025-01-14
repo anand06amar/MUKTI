@@ -30,6 +30,7 @@ export function DialogDemo() {
   const [institute, setInstitute] = useState("");
   const [error, setError] = useState(false);
   const [success, setSuccess] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   async function handleSubmit() {
     if (
@@ -41,6 +42,7 @@ export function DialogDemo() {
       institute !== "" &&
       year !== ""
     ) {
+      setIsOpen(false);
       setDoc(doc(db, "users", email), {
         name: name,
         email: email,
@@ -50,7 +52,9 @@ export function DialogDemo() {
         roll:roll,
         institute: institute,
       })
-        .then(() => setSuccess(true))
+        .then(() => {
+          setSuccess(true)
+        })
         .catch((e) => console.log(e));
     } else {
       setError(true);
@@ -79,7 +83,7 @@ export function DialogDemo() {
 
   return (
     <>
-      <Dialog>
+      <Dialog open={isOpen} onOpenChange={setIsOpen}>
         <DialogTrigger asChild>
           <Button
             borderRadius="2.25rem"
@@ -122,6 +126,7 @@ export function DialogDemo() {
               </Label>
               <Input
                 id="mobileNumber"
+                type="number"
                 onChange={(e) => setMobile(e.target.value)}
                 value={mobile}
                 className="col-span-3 bg-slate-900"

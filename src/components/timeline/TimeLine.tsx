@@ -103,12 +103,12 @@ const Timeline: React.FC = () => {
   const [activeDay, setActiveDay] = useState(1);
 
   return (
-    <div className="timeline bg-gradient-to-r from-purple-900 to-indigo-900 py-20 px-4 relative overflow-hidden">
+<div className="timeline bg-gradient-to-r from-blue-900 to-black py-20 px-4 relative overflow-hidden min-h-screen">
       <div className="absolute inset-0 bg-[url('/images/circuit-board.svg')] opacity-10"></div>
-      <Image src="/images/Ellipse 26.png" alt="background" layout="fill" objectFit="cover" className="opacity-30" />
+      <Image src="/images/Ellipse 26.png" alt="background" layout="fill" objectFit="cover" className="opacity-20" />
       <div className="container mx-auto relative z-10">
         <motion.h2
-          className="text-4xl md:text-6xl font-bold text-center mb-12 text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500"
+          className="text-4xl md:text-6xl font-bold text-center mb-12 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-blue-600 to-blue-800"
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
@@ -118,7 +118,7 @@ const Timeline: React.FC = () => {
 
         <div className="flex justify-center mb-12">
           <motion.div
-            className="bg-black bg-opacity-50 backdrop-blur-md rounded-full p-2 flex space-x-4 border border-cyan-500"
+            className="bg-black bg-opacity-50 backdrop-blur-md rounded-full p-2 flex space-x-4 border border-blue-500"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
@@ -126,10 +126,11 @@ const Timeline: React.FC = () => {
             {[1, 2, 3].map((day) => (
               <motion.button
                 key={day}
-                className={`px-4 md:px-6 py-2 md:py-3 rounded-full text-base md:text-lg font-semibold transition-all duration-300 ${activeDay === day
-                    ? "bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 text-black"
-                    : "bg-transparent text-cyan-400 hover:bg-purple-800"
-                  }`}
+                className={`px-4 md:px-6 py-2 md:py-3 rounded-full text-base md:text-lg font-semibold transition-all duration-300 ${
+                  activeDay === day
+                    ? "bg-gradient-to-r from-blue-400 via-blue-600 to-blue-800 text-white"
+                    : "bg-transparent text-blue-400 hover:bg-blue-900"
+                }`}
                 onClick={() => setActiveDay(day)}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
@@ -149,7 +150,7 @@ const Timeline: React.FC = () => {
             transition={{ duration: 0.5 }}
             className="grid grid-cols-1 md:grid-cols-2 gap-6"
           >
-            {(activeDay === 1 ? day1 : activeDay == 2 ? day2 : day3).map((item, index) => (
+            {(activeDay === 1 ? day1 : activeDay === 2 ? day2 : day3).map((item, index) => (
               <CyberpunkCard key={index} {...item} />
             ))}
           </motion.div>

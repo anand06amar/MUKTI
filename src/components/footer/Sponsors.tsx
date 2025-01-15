@@ -47,7 +47,6 @@ function Sponsors() {
               Our Sponsors
             </motion.h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:w-60vw lg:flex lg:items-center lg:justify-evenly gap-8">
-              {/* Uncomment this section and remove the "Coming Soon" div when ready to display sponsors */}
               {sponsors.map((sponsor, index) => (
                 <motion.div
                   key={sponsor.name}

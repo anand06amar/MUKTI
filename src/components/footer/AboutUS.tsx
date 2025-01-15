@@ -6,7 +6,7 @@ import { GlobeIcon, FacebookIcon, InstagramIcon, LinkedinIcon } from 'lucide-rea
 
 export default function AboutUs() {
   return (
-    <div className="min-h-screen w-full bg-gradient-to-br from-black via-blue-900 to-blue-800 text-white relative">
+    <div id='about' className="min-h-screen w-full bg-gradient-to-br from-black via-blue-900 to-blue-800 text-white relative">
       <div className="container mx-auto px-4 py-16">
         <motion.h1 
           initial={{ opacity: 0, y: -50 }}

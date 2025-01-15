@@ -15,7 +15,7 @@ interface SpeakerCardProps {
 
 function SpeakerCard({ name, image, bio, linkedIn, twitter }: SpeakerCardProps) {
   return (
-    <div className="flex flex-col items-center w-full max-w-[320px] mx-auto">
+    <div id='speakers' className="flex flex-col items-center w-full max-w-[320px] mx-auto">
       <div className="relative rounded-lg border-[3px] border-[#233287] h-[350px] w-full flex overflow-hidden">
         <Image
           src={image || "/placeholder.svg"}

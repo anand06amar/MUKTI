@@ -14,9 +14,9 @@ export function Card2() {
       id="speakers"
       className="cardHolder mx-auto lg:mx-20 h-[400px] w-[320px]"
     >
-      <div className="relative rounded-lg mx-auto speakerCard mt-10 flex flex-row border-[3px] border-[#ae445a] h-[350px] w-[300px] ">
+      <div className="relative rounded-lg mx-auto speakerCard mt-10 flex flex-row border-[3px] border-[#233287] h-[350px] w-[300px] ">
         <Image
-          src="/images/joban.png"
+          src="/images/riti.png"
           height="1000"
           width="1000"
           className=" h-[373px] w-[250px] object-cover mb-[53px] pb-30 group-hover/card:shadow-xl "
@@ -30,16 +30,16 @@ export function Card2() {
         {/* <Link href={`/`}>
           <InstagramIcon style={{ color: "#ae445a" }}  />
         </Link> */}
-        <Link href={`https://www.linkedin.com/in/jobandeep-singh`}>
-          <LinkedInIcon style={{ color: "#ae445a" }} />
+        <Link href={`https://www.linkedin.com/in/riti2409/`}>
+          <LinkedInIcon style={{ color: "#233287" }} />
         </Link>
         <Link href={`/`} passHref>
-          <XIcon style={{ color: "#ae445a" }} />
+          <XIcon style={{ color: "#233287" }} />
         </Link>
         </div>
       </div>
-      <div className="text-[#ae445a] text-2xl pt-2 pl-2 pr-2 flex items-center justify-center font-bold z-10">Joban Singh</div>
-      <div className="text-[#e8bcb9] p-1 flex items-center justify-center text-center font-bold opacity-80 z-10">Keynote speaker at React Summit Amsterdam, EnterJS conf. & Software Engineer @Microsoft</div>
+      <div className="text-[#445dae] text-2xl pt-2 pl-2 pr-2 flex items-center justify-center font-bold z-10">Riti Kumari</div>
+      <div className="text-[#b9c2e8] p-1 flex items-center justify-center text-center font-bold opacity-80 z-10">SDE-III @ Walmart Global Tech | Educator, YouTuber, and Public Speaker sharing insights on tech, growth, and innovation.</div>
     </div>
   );
 }

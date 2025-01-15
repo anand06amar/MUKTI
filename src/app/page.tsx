@@ -13,23 +13,27 @@ import { Card } from "@/components/speakers/Card";
 import { Card2 } from "@/components/speakers/Card2";
 import Timeline from "@/components/timeline/TimeLine";
 import ComingSoon from "@/components/ComingSoon/ComingSoon";
+import Showdown from '@/components/showdown/Showdown'
+import Header from '@/components/header/Header'
 
 
 export default function Home() {
   return (
     <div className="overflow-x-hidden">
+      <Header />
       <NavbarFloat />
       <Hero />
       <Counter />
+      <Showdown />
+      <Timeline />
       <div className="flex relative justify-center text-3xl lg:text-5xl font-bold font-lalezar z-40 my-16">
         Our Speakers
       </div>
-        <ComingSoon/>
-      {/* <div className="flex flex-col lg:flex-row justify-center gap-y-16 mb-16">
+        {/* <ComingSoon/> */}
+      <div className="flex flex-col lg:flex-row justify-center gap-y-16 mb-16">
         <Card />
         <Card2 />
-      </div> */}
-      <Timeline />
+      </div>
       <Sponsors />
       <AboutUs />
     </div>

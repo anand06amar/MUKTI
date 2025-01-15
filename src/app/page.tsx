@@ -11,6 +11,7 @@ import Counter from "@/components/countdown/counter";
 import TimeLine from "@/components/timeline/TimeLine";
 import { Card } from "@/components/speakers/Card";
 import { Card2 } from "@/components/speakers/Card2";
+import { SpeakerCards } from "@/components/speakers/speaker-cards";
 import Timeline from "@/components/timeline/TimeLine";
 import ComingSoon from "@/components/ComingSoon/ComingSoon";
 import Showdown from '@/components/showdown/Showdown'
@@ -25,15 +26,16 @@ export default function Home() {
       <Hero />
       <Counter />
       <Showdown />
-      <Timeline />
       <div className="flex relative justify-center text-3xl lg:text-5xl font-bold font-lalezar z-40 my-16">
         Our Speakers
       </div>
+      <SpeakerCards/>
+      <Timeline />
         {/* <ComingSoon/> */}
-      <div className="flex flex-col lg:flex-row justify-center gap-y-16 mb-16">
+      {/* <div className="flex flex-col lg:flex-row justify-center gap-y-16 mb-16">
         <Card />
         <Card2 />
-      </div>
+      </div> */}
       <Sponsors />
       <AboutUs />
     </div>

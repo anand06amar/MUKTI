@@ -2,8 +2,9 @@
 
 import Image from "next/image"
 import Link from "next/link"
-import { LinkedinIcon as LinkedIn, Twitter } from 'lucide-react'
+// import { LinkedinIcon as LinkedIn, Twitter } from 'lucide-react'
 import XIcon from "@mui/icons-material/X";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 interface SpeakerCardProps {
   name: string
@@ -26,7 +27,7 @@ function SpeakerCard({ name, image, bio, linkedIn, twitter }: SpeakerCardProps) 
         />
         <div className="flex flex-col items-center justify-center gap-4 p-2 bg-white">
           <Link href={linkedIn} aria-label={`${name}'s LinkedIn profile`}>
-            <LinkedIn className="w-8 h-8 text-[#233287]" />
+            <LinkedInIcon className="w-8 h-8 text-[#233287]" />
           </Link>
           <Link href={twitter} aria-label={`${name}'s Twitter profile`}>
             <XIcon className="w-8 h-8 text-[#233287]" />
@@ -45,7 +46,7 @@ export function SpeakerCards() {
       <SpeakerCard
         name="Ali Solanki"
         image="/images/ali.png"
-        bio="Blockchain developer skilled in building decentralized applications and smart contracts using Solidity on Ethereum and other Web3 platforms."
+        bio="MetaRizz Technologies Founder | Blockchain developer skilled in building decentralized applications and smart contracts using Solidity on Ethereum and other Web3 platforms."
         linkedIn="https://www.linkedin.com/in/alisolanki/"
         twitter="https://x.com/alisolankii"
       />
